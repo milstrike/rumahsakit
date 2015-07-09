@@ -79,7 +79,7 @@
                         <div class="span9 bigPanel boxShadow" id="bigPanel">
                                 <ul class="breadcrumb">
                                     <li><a href="../../landing/">Beranda</a> <span class="divider">/</span></li>
-                                    <li class="active">Form IKUKP </li>
+                                    <li class="active">Manajemen Perpajakan</li>
                                 </ul>
                         </div>
                     </div>

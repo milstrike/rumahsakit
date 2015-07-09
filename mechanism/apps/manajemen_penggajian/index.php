@@ -5,6 +5,7 @@
         include "../../../class/router.php";
         include "../../../class/initTitle.php";
         include "../../../data/basic.php";
+        include "../../../class/logout.php";
         if(empty ($_SESSION['status'])){
             header("Location:../../../"); // Redirecting To Other Page
         }
@@ -69,7 +70,9 @@
                                         </td>
                                     </tr>
                                 </table>
-                                <button class="btn btn-block btn-warning buttonLock">Logout!</button>
+                                <form action="" method="post">
+                                    <button type="submit" id="logout" name="logout" class="btn btn-block btn-warning buttonLock">Logout!</button>
+                                </form>
                             </div>
                         </div>
                         
