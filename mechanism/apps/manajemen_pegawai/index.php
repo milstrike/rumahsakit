@@ -5,6 +5,9 @@
         include "../../../class/router.php";
         include "../../../class/initTitle.php";
         include "../../../data/basic.php";
+        include "../../../data/tambahSertifikasi.php";
+        include "../../../data/EditSertifikasi.php";
+        include "../../../data/deleteSertifikasi.php";
         include "../../../class/logout.php";
         if(empty ($_SESSION['status'])){
             header("Location:../../../"); // Redirecting To Other Page
@@ -81,11 +84,30 @@
                                     <li><a href="../../landing/">Beranda</a> <span class="divider">/</span></li>
                                     <li class="active">Manajemen Pegawai</li>
                                 </ul>
+                            
+                                <p align="right">
+                                    <a href="#tambah" data-toggle='modal'><button type="submit" class="btn btn-small"><i class="icon-plus-sign"></i>&nbsp;Tambah Pegawai</button></a>                                
+                                </p>    
+                                
+                                
+                                    <?php
+                                    include "../../../data/view/pegawaiView.php";
+                                    
+                                    ?>
+                            
+                            <?php
+                                include "../../../data/view/tambahSertifikasiViewModal.php";
+                                include "../../../data/view/editSertifikasiViewModal.php";
+                                include "../../../data/view/deleteSertifikasiModal.php";
+                            ?>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        
+        <script src='../../../bootstrap/js/jquery.js'></script>
+        <script src='../../../bootstrap/js/bootstrap.js'></script>
         
     </body>
 </html>

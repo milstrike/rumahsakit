@@ -16,9 +16,27 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
+include "my-conf.php";
 
-//JS for Bootstrap and Jquery
-echo "<script src='bootstrap/js/jquery.js'></script>";
-echo "<script src='bootstrap/js/bootstrap.js'></script>";
+$error='';
+
+if (isset($_POST['submitTambah'])) {
+if (empty($_POST['keteranganMasaKerja']) || empty($_POST['poinMasaKerja'])) {
+$error = "<font color='red'>kolom isian harus diisi semua!</font>";
+}
+else
+{
+// Define $username and $password
+$keteranganMasaKerja2=$_POST['keteranganMasaKerja'];
+$poinMasaKerja2=$_POST['poinMasaKerja'];
+
+    
+$sqlx = "INSERT INTO rumahsakit.a_1_masa_kerja (id, keterangan, poin) VALUES (NULL, '$keteranganMasaKerja2', '$poinMasaKerja2')";
+$queryx = mysql("rumahsakit", $sqlx);    
+
+header("Refresh:0");
+
+}
+}
 
 

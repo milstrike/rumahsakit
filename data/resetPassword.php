@@ -16,9 +16,22 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
+include "my-conf.php";
 
-//JS for Bootstrap and Jquery
-echo "<script src='bootstrap/js/jquery.js'></script>";
-echo "<script src='bootstrap/js/bootstrap.js'></script>";
+$error='';
 
+if (isset($_POST['submitReset'])) {
+$id6=$_POST['id'];
+$passView6=$_POST['user'];
+$passNormal=$_POST['user'];
+
+$passView6 = md5($passView6);
+
+
+
+$sqlx = "UPDATE rumahsakit.user SET password='$passView6', pass_umask='$passNormal'  WHERE user.id='$id6'";
+$queryx = mysql("rumahsakit", $sqlx);    
+
+header("Location:../../apps/manajemen_user/");
+}
 

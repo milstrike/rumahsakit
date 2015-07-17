@@ -5,6 +5,7 @@
         include "../../../class/router.php";
         include "../../../class/initTitle.php";
         include "../../../data/basic.php";
+        include "../../../data/createNewAccount.php";
         include "../../../class/logout.php";
         if(empty ($_SESSION['status'])){
             header("Location:../../../"); // Redirecting To Other Page
@@ -79,62 +80,70 @@
                         <div class="span9 bigPanel boxShadow" id="bigPanel">
                                 <ul class="breadcrumb">
                                     <li><a href="../../landing/">Beranda</a> <span class="divider">/</span></li>
-                                    <li class="active">Konfigurasi Poin</li>
+                                    <li><a href="../manajemen_user/">Manajemen User</a> <span class="divider">/</span></li>
+                                    <li class="active">Tambah User</li>
                                 </ul>
                             
-                                Pilih salah satu untuk konfigurasi poin pegawai.
                             
-                                <dl class="dl-horizontal">
-                                    <a href="konfigurasi_poin_masa_kerja/">
-                                    <dt>Masa Kerja</dt>
-                                    <dd>Konfigurasi poin untuk masa kerja masing-masing pegawai</dd>
-                                    </a>
-                                    
-                                    <a href="konfigurasi_poin_kepegawaian/">
-                                    <dt>Kepegawaian</dt>
-                                    <dd>Konfigurasi poin untuk golongan kerja masing-masing pegawai</dd>
-                                    </a>
-                                    
-                                    <a href="konfigurasi_poin_pendidikan/">
-                                    <dt>Pendidikan</dt>
-                                    <dd>Konfigurasi poin untuk tingkat pegawai masing-masing pegawai</dd>
-                                    </a>
-                                    
-                                    <a href="konfigurasi_poin_sertifikasi/">
-                                    <dt>Sertifikasi</dt>
-                                    <dd>Konfigurasi poin untuk jenis sertifikasi masing-masing pegawai</dd>
-                                    </a>
-                                    
-                                    <a href="konfigurasi_poin_resiko/">
-                                    <dt>Resiko</dt>
-                                    <dd>Konfigurasi poin untuk tingkat resiko yang masing-masing pegawai</dd>
-                                    </a>
-                                    
-                                    <a href="konfigurasi_poin_tingkat_emergensi/">
-                                    <dt>Tingkat Emergensi</dt>
-                                    <dd>Konfigurasi poin untuk tingkat emergensi masing-masing pegawai</dd>
-                                    </a>
-                                    
-                                    <a href="konfigurasi_poin_struktural/">
-                                    <dt>Struktural</dt>
-                                    <dd>Konfigurasi poin untuk tingkat/jabatan masing-masing pegawai</dd>
-                                    </a>
-                                    
-                                    <a href="konfigurasi_poin_kepanitiaan_tim_kerja/">
-                                    <dt>Kepanitiaan Tim Kerja</dt>
-                                    <dd>Konfigurasi poin untuk posisi kepanitiaan masing-masing pegawai</dd>
-                                    </a>
-                                    
-                                    <a href="konfigurasi_poin_level_koordinasi/">
-                                    <dt>Level Koordinasi</dt>
-                                    <dd>Konfigurasi poin untuk jumlah anggota panitia yang di handle masing-masing pegawai</dd>
-                                    </a>
-                                </dl>
+                            <form class="form-horizontal" action="" method="post">
+                                <div class="control-group">
+                                    <label class="control-label" for="namalengkap">Nama Lengkap*</label>
+                                    <div class="controls">
+                                        <input id="namalengkap" name="namalengkap" type="text" placeholder="Nama Lengkap" class="span5" required="required">
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <label class="control-label" for="username">Username*</label>
+                                    <div class="controls">
+                                        <input id="username" name="username" type="text" placeholder="Username" class="span5" maxlength="20" required="required">
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <label class="control-label" for="password">Password*</label>
+                                    <div class="controls">
+                                        <input id="password" name="password" type="password" placeholder="Password" class="span5" maxlength="20" required="required">
+                                    </div>
+                                </div>
+                                <!-- <div class="control-group">
+                                    <label class="control-label" for="password2">Re-type Password*</label>
+                                    <div class="controls">
+                                        <input id="password2" name="password2" type="password" placeholder="Masukkan kembali Password" class="span5" required="required">
+                                        <span class="help-inline" style="color: #cf0404;">Password tidak sama!</span>
+                                        <span class="help-inline" style="color: #7aba7b;">Password sama!</span>
+                                    </div>
+                                </div> -->
+                                <div class="control-group">
+                                    <label class="control-label" for="telepon">No. Telepon*</label>
+                                    <div class="controls">
+                                        <input id="telepon" name="telepon" type="text" placeholder="No. Telepon" class="span5" maxlength="20" required="required">
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <label class="control-label" for="jabatan">Tingkatan*</label>
+                                    <div class="controls">
+                                        <select id="jabatan" name="jabatan" class="span5" required="required">
+                                            <option value="Super Admin">Super Admin</option>
+                                            <option value="Admin">Admin</option>
+                                            <option value="Pejabat Penilai">Pejabat Penilai</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <label class="control-label" for="submit">&nbsp;</label>
+                                    <div class="controls">
+                                        <button type="submit" id="submit" name="submit" class="btn btn-primary"><i class="icon-user icon-white"></i>&nbsp;<strong>Buat Akun!</strong></button><br/>
+                                    </div>
+                                </div>
+                                <span class="spanErrorB"><?php echo $error; ?></span>
+                                    </form>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        
+        <script src='../../../bootstrap/js/jquery.js'></script>
+        <script src='../../../bootstrap/js/bootstrap.js'></script>
         
     </body>
 </html>

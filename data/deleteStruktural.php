@@ -16,9 +16,16 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
+include "my-conf.php";
 
-//JS for Bootstrap and Jquery
-echo "<script src='bootstrap/js/jquery.js'></script>";
-echo "<script src='bootstrap/js/bootstrap.js'></script>";
+$error='';
 
+if (isset($_POST['submitDelete'])) {
+$id=$_POST['id'];
+
+$sqlx = "DELETE FROM rumahsakit.e_1_struktural WHERE e_1_struktural.id='$id'";
+$queryx = mysql("rumahsakit", $sqlx);    
+
+header("Refresh:0");
+}
 

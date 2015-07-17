@@ -2,21 +2,21 @@
 <html>
     <head>
         <?php
-        include "../../../class/router.php";
-        include "../../../class/initTitle.php";
-        include "../../../data/basic.php";
-        include "../../../data/EditAccount.php";
-        include "../../../data/deleteAccount.php";
-        include "../../../data/resetPassword.php";
-        include "../../../class/logout.php";
+        include "../../../../class/router.php";
+        include "../../../../class/initTitle.php";
+        include "../../../../data/basic.php";
+        include "../../../../data/tambahMasaKerja.php";
+        include "../../../../data/EditMasaKerja.php";
+        include "../../../../data/deleteMasaKerja.php";
+        include "../../../../class/logout.php";
         if(empty ($_SESSION['status'])){
-            header("Location:../../../"); // Redirecting To Other Page
+            header("Location:../../../../"); // Redirecting To Other Page
         }
         ?>
         ?>        
-        <link href='../../../bootstrap/css/bootstrap.css' rel='stylesheet' media='screen'>
-        <link href='../../../bootstrap/css/bootstrap-responsive.css' rel='stylesheet' media='screen'>
-        <link href='../../../bootstrap/css/custom.css' rel='stylesheet' media='screen'>
+        <link href='../../../../bootstrap/css/bootstrap.css' rel='stylesheet' media='screen'>
+        <link href='../../../../bootstrap/css/bootstrap-responsive.css' rel='stylesheet' media='screen'>
+        <link href='../../../../bootstrap/css/custom.css' rel='stylesheet' media='screen'>
     </head>
     <body class="bodyBackground">
         
@@ -50,7 +50,7 @@
                                 <table width="100%" border="0" cellpadding="5" cellspacing="5">
                                     <tr>
                                         <td widtch="25%" class="firstColumn">
-                                            <img src="../../../assets/icon-uses/nama.png" alt="icon-user"/>
+                                            <img src="../../../../assets/icon-uses/nama.png" alt="icon-user"/>
                                         </td>
                                         <td width="75%" class="anotherColumn">
                                             <strong><?php echo $_SESSION['nama'];?></strong>
@@ -58,7 +58,7 @@
                                     </tr>
                                     <tr>
                                         <td class="firstColumn">
-                                            <img src="../../../assets/icon-uses/jabatan.png" alt="icon-jabatan"/>
+                                            <img src="../../../../assets/icon-uses/jabatan.png" alt="icon-jabatan"/>
                                         </td>
                                         <td class="anotherColumn">
                                             <?php echo $_SESSION['jabatan'];?>
@@ -66,7 +66,7 @@
                                     </tr>
                                     <tr>
                                         <td class="firstColumn">
-                                            <img src="../../../assets/icon-uses/telepon.png" alt="icon-telepon"/>
+                                            <img src="../../../../assets/icon-uses/telepon.png" alt="icon-telepon"/>
                                         </td>
                                         <td class="anotherColumn">
                                             <?php echo $_SESSION['telepon'];?>
@@ -81,45 +81,45 @@
                         
                         <div class="span9 bigPanel boxShadow" id="bigPanel">
                                 <ul class="breadcrumb">
-                                    <li><a href="../../landing/">Beranda</a> <span class="divider">/</span></li>
-                                    <li class="active">Manajemen User</li>
+                                    <li><a href="../../../landing/">Beranda</a> <span class="divider">/</span></li>
+                                    <li><a href="../">Konfigurasi Poin</a> <span class="divider">/</span></li>
+                                    <li class="active">Konfigurasi Poin: Masa Kerja</li>
                                 </ul>
-                            <p align="right">
-                                <a href="../buat_akun/"><button type="submit" id="edit" name="edit" class="btn btn-small"><i class="icon-plus-sign"></i>&nbsp;Tambah User</button></a>
-                                <a href="#"><button type="submit" id="edit" name="edit" class="btn btn-small"><i class="icon-user"></i>&nbsp;Manajemen Role</button></a>
-                            </p>    
-                            <table width="100%" cellpadding="5" cellspacing="5" class="table table-bordered table-hover">
+                            
+                                <p align="right">
+                                    <a href="#tambahMasaKerja" data-toggle='modal'><button type="submit" class="btn btn-small"><i class="icon-plus-sign"></i>&nbsp;Tambah Masa Kerja</button></a>                                
+                                </p>    
+                                
+                                <table width="100%" cellpadding="5" cellspacing="5" class="table table-bordered table-hover">
                                 <thead>
                                     <tr id="theadBasic">
                                         <td width="10%" id="thead">No</td>
-                                        <td width="30%" id="thead">Nama</td>
-                                        <td width="30%" id="thead">Username</td>
+                                        <td width="30%" id="thead">Keterangan</td>
+                                        <td width="30%" id="thead">Jumlah Poin</td>
                                         <td width="30%" id="thead">Aksi</td>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <?php
-                                    include "../../../data/view/userView.php";
+                                    include "../../../../data/view/masaKerjaView.php";
+                                    
                                     ?>
                                 </tbody>
                             </table>
                             
                             <?php
-                                include "../../../data/view/userViewModal.php";
-                                include "../../../data/view/editAccountViewModal.php";
-                                include "../../../data/view/deleteAccountModal.php";
-                                include "../../../data/view/resetPasswordViewModal.php";
+                                include "../../../../data/view/tambahMasaKerjaViewModal.php";
+                                include "../../../../data/view/editMasaKerjaViewModal.php";
+                                include "../../../../data/view/deleteMasaKerjaModal.php";
                             ?>
-                            
-                            
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         
-        <script src='../../../bootstrap/js/jquery.js'></script>
-        <script src='../../../bootstrap/js/bootstrap.js'></script>
+        <script src='../../../../bootstrap/js/jquery.js'></script>
+        <script src='../../../../bootstrap/js/bootstrap.js'></script>
         
     </body>
 </html>
