@@ -42,3 +42,14 @@ if($rows > 0){
         $counter = $counter + 1;
     }
 }
+else{
+    echo 
+            "<tr>
+            <td colspan='7' style='padding:20px'> 
+            <p align='center'>
+            <strong>Belum ada masa kerja yang tersimpan, silakan tambahkan melalui menu Tambah Masa Kerja</strong>
+            </p>
+            </td>
+            </tr>
+            ";
+}

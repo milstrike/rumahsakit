@@ -178,6 +178,17 @@
                             </div>
                             
                             <div class="span4">
+                                <legend>Rumah Sakit</legend>
+                                <table width="100%" border="0" cellpadding="5" cellspacing="5">
+                                    <tr>
+                                        <td widtch="20%" class="firstColumn">
+                                            <img src="../../assets/icon-uses/bagian.png" alt="icon-bagian"/>
+                                        </td>
+                                        <td width="80%" class="anotherColumn">
+                                            <a href="../apps/manajemen_rs/" title="Manajemen Laporan Penggajian"><strong>Manajemen Perangkat RS</strong></a>
+                                        </td>
+                                    </tr>
+                                </table>
                                 <legend>Keuangan</legend>
                                 <table width="100%" border="0" cellpadding="5" cellspacing="5">
                                     <tr>
@@ -185,7 +196,7 @@
                                             <img src="../../assets/icon-uses/gaji.png" alt="icon-gaji"/>
                                         </td>
                                         <td width="80%" class="anotherColumn">
-                                            <a href="#" title="Manajemen Penggajian"><strong>Manajemen Penggajian</strong></a>
+                                            <a href="../apps/manajemen_penggajian/" title="Manajemen Penggajian"><strong>Manajemen Penggajian</strong></a>
                                         </td>
                                     </tr>
                                     <tr>
@@ -193,7 +204,7 @@
                                             <img src="../../assets/icon-uses/pajak.png" alt="icon-pajak"/>
                                         </td>
                                         <td width="80%" class="anotherColumn">
-                                            <a href="#" title="Manajemen Perpajakan"><strong>Manajemen Perpajakan</strong></a>
+                                            <a href="../apps/manajemen_perpajakan/" title="Manajemen Perpajakan"><strong>Manajemen Perpajakan</strong></a>
                                         </td>
                                     </tr>
                                 </table>

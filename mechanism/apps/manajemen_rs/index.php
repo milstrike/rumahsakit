@@ -5,8 +5,9 @@
         include "../../../class/router.php";
         include "../../../class/initTitle.php";
         include "../../../data/basic.php";
-        include "../../../data/editPerpajakan.php";
-        include "../../../data/deletePerpajakan.php";
+        include "../../../data/tambahPerangkat.php";
+        include "../../../data/editPerangkat.php";
+        include "../../../data/deletePerangkat.php";
         include "../../../class/logout.php";
         if(empty ($_SESSION['status'])){
             header("Location:../../../"); // Redirecting To Other Page
@@ -81,11 +82,11 @@
                         <div class="span9 bigPanel boxShadow" id="bigPanel">
                                 <ul class="breadcrumb">
                                     <li><a href="../../landing/">Beranda</a> <span class="divider">/</span></li>
-                                    <li class="active">Manajemen Perpajakan </li>
+                                    <li class="active">Manajemen Perangkat RS</li>
                                 </ul>
                             
-                            <p align="right">
-                                    <!--<a href="#tambah" data-toggle='modal'><button type="submit" class="btn btn-small"><i class="icon-plus-sign"></i>&nbsp;Tambah Gaji Pokok</button></a>-->
+                                <p align="right">
+                                    <a href="#tambah" data-toggle='modal'><button type="submit" class="btn btn-small"><i class="icon-plus-sign"></i>&nbsp;Tambah Perangkat Rumah Sakit</button></a>                                
                                 </p>    
                                 
                                 
@@ -93,29 +94,35 @@
                                 <thead>
                                     <tr id="theadBasic">
                                         <td width="10%" id="thead">No</td>
-                                        <td width="35%" id="thead">Keterangan</td>
-                                        <td width="35%" id="thead">Pajak(%)</td>
+                                        <td width="30%" id="thead">Keterangan</td>
+                                        <td width="15%" id="thead">Level Resiko</td>
+                                        <td width="5%" id="thead">Poin</td>
+                                        <td width="15%" id="thead">Level Emergensi</td>
+                                        <td width="5%" id="thead">Poin</td>
                                         <td width="20%" id="thead">Aksi</td>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <?php
-                                    include "../../../data/view/perpajakanView.php";
+                                    include "../../../data/view/perangkatView.php";
                                     ?>
                                 </tbody>
                             </table>
-                                <?php
-                                //include "../../../../data/view/tambahKepegawaianViewModal.php";
-                                include "../../../data/view/editPerpajakanViewModal.php";
-                                include "../../../data/view/deletePerpajakanModal.php";
+                            
+                            <?php
+                                include "../../../data/view/tambahPerangkatViewModal.php";
+                                include "../../../data/view/editPerangkatViewModal.php";
+                                include "../../../data/view/deletePerangkatModal.php";
                             ?>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        
         <script src='../../../bootstrap/js/jquery.js'></script>
         <script src='../../../bootstrap/js/bootstrap.js'></script>
+        
     </body>
 </html>
 

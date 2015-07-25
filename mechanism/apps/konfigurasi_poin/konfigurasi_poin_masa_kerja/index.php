@@ -94,7 +94,7 @@
                                 <thead>
                                     <tr id="theadBasic">
                                         <td width="10%" id="thead">No</td>
-                                        <td width="30%" id="thead">Keterangan</td>
+                                        <td width="30%" id="thead">Keterangan (Tahun)</td>
                                         <td width="30%" id="thead">Jumlah Poin</td>
                                         <td width="30%" id="thead">Aksi</td>
                                     </tr>

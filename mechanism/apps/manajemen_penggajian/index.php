@@ -5,6 +5,8 @@
         include "../../../class/router.php";
         include "../../../class/initTitle.php";
         include "../../../data/basic.php";
+        include "../../../data/editPenggajian.php";
+        include "../../../data/deletePenggajian.php";
         include "../../../class/logout.php";
         if(empty ($_SESSION['status'])){
             header("Location:../../../"); // Redirecting To Other Page
@@ -81,12 +83,39 @@
                                     <li><a href="../../landing/">Beranda</a> <span class="divider">/</span></li>
                                     <li class="active">Manajemen Penggajian </li>
                                 </ul>
+                            
+                            <p align="right">
+                                    <!--<a href="#tambah" data-toggle='modal'><button type="submit" class="btn btn-small"><i class="icon-plus-sign"></i>&nbsp;Tambah Gaji Pokok</button></a>-->
+                                </p>    
+                                
+                                
+                                    <table width="100%" cellpadding="5" cellspacing="5" class="table table-bordered table-hover">
+                                <thead>
+                                    <tr id="theadBasic">
+                                        <td width="10%" id="thead">No</td>
+                                        <td width="35%" id="thead">Keterangan</td>
+                                        <td width="35%" id="thead">Gaji Pokok</td>
+                                        <td width="20%" id="thead">Aksi</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <?php
+                                    include "../../../data/view/penggajianView.php";
+                                    ?>
+                                </tbody>
+                            </table>
+                                <?php
+                                //include "../../../../data/view/tambahKepegawaianViewModal.php";
+                                include "../../../data/view/editPenggajianViewModal.php";
+                                include "../../../data/view/deletePenggajianModal.php";
+                            ?>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        
+        <script src='../../../bootstrap/js/jquery.js'></script>
+        <script src='../../../bootstrap/js/bootstrap.js'></script>
     </body>
 </html>
 
