@@ -32,12 +32,12 @@ $keteranganKepegawaian=$_POST['keteranganKepegawaian'];
 $gajiKepegawaian=$_POST['poinKepegawaian'];
 
 
-$sqlx = "UPDATE rumahsakit.a_2_kepegawaian SET gaji='$gajiKepegawaian' WHERE a_2_kepegawaian.id='$id'";
-$queryx = mysql("rumahsakit", $sqlx);    
+$sqlx = "UPDATE a3821629_rs.a_2_kepegawaian SET gaji='$gajiKepegawaian' WHERE a_2_kepegawaian.id='$id'";
+$queryx = mysql("a3821629_rs", $sqlx);    
 
 
 //header("Location:../apps/konfigurasi_poin/konfigurasi_poin_masa_kerja");
-header("Refresh:0");
+//header("Refresh:0");
 }
 }
 

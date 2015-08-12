@@ -6,14 +6,13 @@
         include "../../../../class/initTitle.php";
         include "../../../../data/basic.php";
         include "../../../../data/tambahKoordinasi.php";
-        include "../../../../data/EditKoordinasi.php";
+        include "../../../../data/editKoordinasi.php";
         include "../../../../data/deleteKoordinasi.php";
         include "../../../../class/logout.php";
         if(empty ($_SESSION['status'])){
             header("Location:../../../../"); // Redirecting To Other Page
         }
         ?>
-        ?>        
         <link href='../../../../bootstrap/css/bootstrap.css' rel='stylesheet' media='screen'>
         <link href='../../../../bootstrap/css/bootstrap-responsive.css' rel='stylesheet' media='screen'>
         <link href='../../../../bootstrap/css/custom.css' rel='stylesheet' media='screen'>
@@ -42,8 +41,9 @@
             <div class="row-fluid">
                 <div class="span12">
                     <div class="row-fluid">
-                        <div class="span3 panelSide boxShadow bs-docs-sidebar">
-                            <div class="boxBA">
+                        <div class="span3">
+                            <div class="panelSide boxShadow">
+                                <div class="boxBA">
                                 <strong>Detail Akun</strong>
                             </div>
                             <div class="boxBC">
@@ -77,6 +77,7 @@
                                     <button type="submit" id="logout" name="logout" class="btn btn-block btn-warning buttonLock">Logout!</button>
                                 </form>
                             </div>
+                            </div>
                         </div>
                         
                         <div class="span9 bigPanel boxShadow" id="bigPanel">
@@ -94,7 +95,7 @@
                                 <thead>
                                     <tr id="theadBasic">
                                         <td width="10%" id="thead">No</td>
-                                        <td width="30%" id="thead">Keterangan</td>
+                                        <td width="30%" id="thead">Jumlah Bawahan</td>
                                         <td width="30%" id="thead">Jumlah Poin</td>
                                         <td width="30%" id="thead">Aksi</td>
                                     </tr>

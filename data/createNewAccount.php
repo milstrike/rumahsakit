@@ -26,12 +26,16 @@ $error = "<font color='red'>kolom isian harus diisi semua!</font>";
 }
 else
 {
+
+list($data1, $data2) = explode("-", $_POST['jabatan'], 2);
+
 // Define $username and $password
 $namalengkap=$_POST['namalengkap'];
 $username=$_POST['username'];
 $password=$_POST['password'];
 $telepon=$_POST['telepon'];
-$jabatan=$_POST['jabatan'];
+$level = $data1;
+$jabatan= $data2;
 
 //Convert to md5
 $username2 = md5($username);
@@ -44,7 +48,7 @@ $password2 = stripslashes($password2);
 $username2 = mysql_real_escape_string($username2);
 $password2 = mysql_real_escape_string($password2);
 
-$query = mysql("rumahsakit", "select * from user where password='$password2' AND username='$username2'");
+$query = mysql("a3821629_rs", "select * from user where password='$password2' AND username='$username2'");
 $rows = mysql_num_rows($query);
 if ($rows == 1) {
 $error = "<font color='red'>Terjadi duplikasi username, gunakan username yang lain!</font>";
@@ -52,12 +56,12 @@ $error = "<font color='red'>Terjadi duplikasi username, gunakan username yang la
 else if($rows == 0) {
 
     
-$sqlx = "INSERT INTO rumahsakit.user (id, username, password, user_umask, pass_umask, change_date) VALUES (NULL, '$username2', '$password2', '$username', '$password', CURRENT_TIMESTAMP)";
-$queryx = mysql("rumahsakit", $sqlx);    
+$sqlx = "INSERT INTO a3821629_rs.user (id, username, password, user_umask, pass_umask, level, change_date) VALUES (NULL, '$username2', '$password2', '$username', '$password', '$level', CURRENT_TIMESTAMP)";
+$queryx = mysql("a3821629_rs", $sqlx);    
 
 
-$sqln = "INSERT INTO rumahsakit.user_detail (id, nama, jabatan, telepon, change_date) VALUES (NULL, '$namalengkap', '$jabatan', '$telepon', CURRENT_TIMESTAMP)";
-        $queryn = mysql("rumahsakit", $sqln); 
+$sqln = "INSERT INTO a3821629_rs.user_detail (id, nama, jabatan, telepon, change_date) VALUES (NULL, '$namalengkap', '$jabatan', '$telepon', CURRENT_TIMESTAMP)";
+        $queryn = mysql("a3821629_rs", $sqln); 
     
 
     header("Location:../../apps/manajemen_user/");

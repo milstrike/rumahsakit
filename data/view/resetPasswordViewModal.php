@@ -21,7 +21,7 @@
 
 $counter = 1;
 $sql = "select * from user, user_detail where user.id=user_detail.id";
-$query = mysql("rumahsakit", "select * from user, user_detail where user.id=user_detail.id");
+$query = mysql("a3821629_rs", "select * from user, user_detail where user.id=user_detail.id");
 $rows = mysql_num_rows($query);
 if($rows > 0){
     while($row = mysql_fetch_assoc($query)){
@@ -29,7 +29,7 @@ if($rows > 0){
         $userView5 = $row['user_umask'];
         echo 
             "
-            <div id='resetPassword".$counter."' class='modal hide fade' tabindex='-1' role='dialog' aria-labelledby='UserDetail".$counter."' aria-hidden='true'>
+            <div id='resetPassword".$counter."' class='modal hide'' tabindex='-1' role='dialog' aria-labelledby='UserDetail".$counter."' aria-hidden='true'>
             <div class='modal-header' style='background-color: #149bdf;'>
             <button type='button' class='close' data-dismiss='modal' aria-hidden='true'>×</button>
             <h3 id='myModalLabel' style='color: #fff;'>Hapus User</h3>

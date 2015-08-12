@@ -21,7 +21,7 @@
 
 $counter = 1;
 $sql = "select * from user, user_detail where user.id=user_detail.id";
-$query = mysql("rumahsakit", "select * from user, user_detail where user.id=user_detail.id");
+$query = mysql("a3821629_rs", "select * from user, user_detail where user.id=user_detail.id");
 $rows = mysql_num_rows($query);
 if($rows > 0){
     while($row = mysql_fetch_assoc($query)){
@@ -35,7 +35,8 @@ if($rows > 0){
             "<tr>
             <td width='10%' id='thead'>".$counter."</td>
             <td width='30%' id='thead'>".$namaView."</td>
-            <td width='30%' id='thead'>".$userView."</td>
+            <td width='15%' id='thead'>".$userView."</td>
+            <td width='15%' id='thead'>".$jabatanView."</td>
             <td width='30%' id='thead'>
             <a href='#UserDetail".$counter."' data-toggle='modal'><button type='submit' id='edit' name='edit' class='btn btn-primary btn-small' title='Info Akun'><i class='icon-info-sign icon-white'></i></button></a>
             <a href='#EditUser".$counter."' data-toggle='modal'><button type='submit' id='edit' name='edit' class='btn btn-warning btn-small' title='Edit Akun'><i class='icon-pencil icon-white'></i></button></a>

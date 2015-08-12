@@ -45,12 +45,12 @@ $password2 = stripslashes($password2);
 $username2 = mysql_real_escape_string($username2);
 $password2 = mysql_real_escape_string($password2);
 
-$sqlx = "UPDATE rumahsakit.user SET password='$password2', pass_umask='$password' WHERE user.id='$id'";
-$queryx = mysql("rumahsakit", $sqlx);    
+$sqlx = "UPDATE a3821629_rs.user SET password='$password2', pass_umask='$password' WHERE user.id='$id'";
+$queryx = mysql("a3821629_rs", $sqlx);    
 
 
-$sqln = "UPDATE rumahsakit.user_detail SET nama='$namalengkap', jabatan='$jabatan', telepon='$telepon' WHERE user_detail.id='$id'";
-$queryn = mysql("rumahsakit", $sqln); 
+$sqln = "UPDATE a3821629_rs.user_detail SET nama='$namalengkap', jabatan='$jabatan', telepon='$telepon' WHERE user_detail.id='$id'";
+$queryn = mysql("a3821629_rs", $sqln); 
 
 
 header("Location:../../apps/manajemen_user/");

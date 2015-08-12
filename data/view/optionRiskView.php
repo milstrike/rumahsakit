@@ -23,7 +23,7 @@ $optionRiskies = "<option value='none-0'>None</option>";
 
 $counter = 1;
 $sql = "select * from c_1_resiko ORDER BY c_1_resiko.poin ASC";
-$query = mysql("rumahsakit", "select * from c_1_resiko ORDER BY c_1_resiko.poin ASC");
+$query = mysql("a3821629_rs", "select * from c_1_resiko ORDER BY c_1_resiko.poin ASC");
 $rows = mysql_num_rows($query);
 if($rows > 0){
     while($row = mysql_fetch_assoc($query)){

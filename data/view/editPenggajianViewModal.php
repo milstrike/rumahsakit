@@ -21,7 +21,7 @@
 
 $counter = 1;
 $sql = "select * from a_2_kepegawaian";
-$query = mysql("rumahsakit", "select * from a_2_kepegawaian");
+$query = mysql("a3821629_rs", "select * from a_2_kepegawaian");
 $rows = mysql_num_rows($query);
 if($rows > 0){
     while($row = mysql_fetch_assoc($query)){
@@ -30,7 +30,7 @@ if($rows > 0){
         $gajiView = $row["gaji"];
         echo 
             "
-            <div id='editKepegawaian".$counter."' class='modal hide fade' tabindex='-1' role='dialog' aria-labelledby='editKepegawaian".$counter."' aria-hidden='true'>
+            <div id='editKepegawaian".$counter."' class='modal hide'' tabindex='-1' role='dialog' aria-labelledby='editKepegawaian".$counter."' aria-hidden='true'>
             <div class='modal-header' style='background-color: #149bdf;'>
             <button type='button' class='close' data-dismiss='modal' aria-hidden='true'>×</button>
             <h3 id='myModalLabel' style='color: #fff;'>Edit Gaji Pokok</h3>

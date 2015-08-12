@@ -21,4 +21,4 @@
 echo "<meta name='viewport' content='width=device-width, initial-scale=1.0'>";
     
 //Title Site
-echo "<title>Sistem Informasi Pegawai</title>";
+echo "<title>Sistem Informasi Pegawai - (Technical Preview)</title>";

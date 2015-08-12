@@ -21,16 +21,16 @@
 
 $counter = 1;
 $sql = "select * from e_3_level_koordinasi";
-$query = mysql("rumahsakit", "select * from e_3_level_koordinasi");
+$query = mysql("a3821629_rs", "select * from e_3_level_koordinasi");
 $rows = mysql_num_rows($query);
 if($rows > 0){
     while($row = mysql_fetch_assoc($query)){
         $id = $row["id"];
-        $keterangan = $row["keterangan"];
+        $keterangan = $row["jumlah"];
         $poin = $row["poin"];
         echo 
             "
-            <div id='edit".$counter."' class='modal hide fade' tabindex='-1' role='dialog' aria-labelledby='edit".$counter."' aria-hidden='true'>
+            <div id='edit".$counter."' class='modal hide'' tabindex='-1' role='dialog' aria-labelledby='edit".$counter."' aria-hidden='true'>
             <div class='modal-header' style='background-color: #149bdf;'>
             <button type='button' class='close' data-dismiss='modal' aria-hidden='true'>×</button>
             <h3 id='myModalLabel' style='color: #fff;'>Edit Data Level Koordinasi</h3>
@@ -44,7 +44,7 @@ if($rows > 0){
                                     </div>
                                 </div>
                                 <div class='control-group'>
-                                    <label class='control-label' for='keterangan'>Keterangan*</label>
+                                    <label class='control-label' for='keterangan'>Jumlah Bawahan*</label>
                                     <div class='controls'>
                                         <input id='keterangan' name='keterangan' type='text' required='required' value='".$keterangan."'>
                                     </div>

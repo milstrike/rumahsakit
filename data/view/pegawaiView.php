@@ -21,7 +21,7 @@
 
 $counter = 1;
 $sql = "select * from data_pegawai ORDER BY data_pegawai.nama ASC";
-$query = mysql("rumahsakit", "select * from data_pegawai ORDER BY data_pegawai.nama ASC");
+$query = mysql("a3821629_rs", "select * from data_pegawai ORDER BY data_pegawai.nama ASC");
 $rows = mysql_num_rows($query);
 if($rows > 0){
     
@@ -29,8 +29,8 @@ if($rows > 0){
                                 <thead>
                                     <tr id="theadBasic">
                                         <td width="10%" id="thead">No</td>
-                                        <td width="30%" id="thead">Keterangan</td>
-                                        <td width="30%" id="thead">Jumlah Poin</td>
+                                        <td width="30%" id="thead">Nama</td>
+                                        <td width="30%" id="thead">NIP</td>
                                         <td width="30%" id="thead">Aksi</td>
                                     </tr>
                                 </thead>
@@ -39,15 +39,15 @@ if($rows > 0){
     while($row = mysql_fetch_assoc($query)){
         $id = $row["id"];
         $nama = $row["nama"];
-        $changedate = $row["changedate"];
+        $nip = $row["nip"];
         echo 
             "<tr>
             <td width='10%' id='thead'>".$counter."</td>
             <td width='30%' id='thead'>".$nama."</td>
-            <td width='30%' id='thead'>".$changedate."</td>
+            <td width='30%' id='thead'>".$nip."</td>
             <td width='30%' id='thead'>
             <a href='#detail".$counter."' data-toggle='modal'><button type='submit' id='edit' name='edit' class='btn btn-primary btn-small' title='Info Pegawai'><i class='icon-info-sign icon-white'></i></button></a>
-            <a href='#edit".$counter."' data-toggle='modal'><button type='submit' id='edit' name='edit' class='btn btn-warning btn-small' title='Edit Poin'><i class='icon-pencil icon-white'></i></button></a>
+            <!-- <a href='#edit".$counter."' data-toggle='modal'><button type='submit' id='edit' name='edit' class='btn btn-warning btn-small' title='Edit Poin'><i class='icon-pencil icon-white'></i></button></a> -->
             <a href='#delete".$counter."' data-toggle='modal'><button type='submit' id='remove' name='remove' class='btn btn-danger btn-small' title='Hapus Poin'><i class='icon-remove icon-white'></i></button></a>
             </td>
             </tr>

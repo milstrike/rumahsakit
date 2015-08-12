@@ -5,15 +5,18 @@
         include "../../../class/router.php";
         include "../../../class/initTitle.php";
         include "../../../data/basic.php";
+        include "../../../data/tambahIndikatorIKUKP.php";
+        include "../../../data/editIndikatorIKUKP.php";
+        include "../../../data/deleteIndikatorIKUKP.php";
         include "../../../class/logout.php";
         if(empty ($_SESSION['status'])){
             header("Location:../../../"); // Redirecting To Other Page
         }
         ?>
-        ?>        
         <link href='../../../bootstrap/css/bootstrap.css' rel='stylesheet' media='screen'>
         <link href='../../../bootstrap/css/bootstrap-responsive.css' rel='stylesheet' media='screen'>
         <link href='../../../bootstrap/css/custom.css' rel='stylesheet' media='screen'>
+        <!-- <link href='../../../bootstrap/css/navs.css' rel='stylesheet' media='screen'> -->
     </head>
     <body class="bodyBackground">
         
@@ -39,8 +42,9 @@
             <div class="row-fluid">
                 <div class="span12">
                     <div class="row-fluid">
-                        <div class="span3 panelSide boxShadow bs-docs-sidebar">
-                            <div class="boxBA">
+                        <div class="span3">
+                            <div class="panelSide boxShadow">
+                               <div class="boxBA">
                                 <strong>Detail Akun</strong>
                             </div>
                             <div class="boxBC">
@@ -73,19 +77,55 @@
                                 <form action="" method="post">
                                     <button type="submit" id="logout" name="logout" class="btn btn-block btn-warning buttonLock">Logout!</button>
                                 </form>
+                            </div> 
                             </div>
                         </div>
                         
                         <div class="span9 bigPanel boxShadow" id="bigPanel">
                                 <ul class="breadcrumb">
                                     <li><a href="../../landing/">Beranda</a> <span class="divider">/</span></li>
-                                    <li class="active">Form IKUKP </li>
+                                    <li class="active">Manajemen Form Indikator Kinerja Unit Kerja Pegawai Pegawai(IKUKP)</li>
                                 </ul>
+                            
+                                <p align="right">
+                                    <a href="#tambah" data-toggle='modal'><button type="submit" class="btn btn-small"><i class="icon-plus-sign"></i>&nbsp;Tambah Indikator</button></a>
+                                </p>    
+                                
+                                
+                                    <table width="100%" cellpadding="5" cellspacing="5" class="table table-bordered table-hover">
+                                <thead>
+                                    <tr id="theadBasic">
+                                        <td width="5%" id="thead" style="vertical-align: middle;">No</td>
+                                        <td id="thead" style="vertical-align: middle;">Indikator Kinerja Unit</td>
+                                        <td id="thead" style="vertical-align: middle;">Capaian Unit Kerja</td>
+                                        <td id="thead" style="vertical-align: middle;">Target Kinerja Unit Kerja (SATKER) (A)</td>
+                                        <td id="thead" style="vertical-align: middle;">Target Kinerja Unit Kerja (SATKER) (B)</td>
+                                        <td id="thead" style="vertical-align: middle;">Nilai CUK</td>
+                                        <td id="thead" style="vertical-align: middle;">Bobot Kinerja</td>
+                                        <td id="thead" style="vertical-align: middle;">Nilai Akhir</td>
+                                        <td id="thead" style="vertical-align: middle;">Aksi</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <?php
+                                    include "../../../data/view/masterIKUKPView.php";
+                                    ?>
+                                </tbody>
+                            </table>
+                            
+                            <?php
+                                include "../../../data/view/tambahIKUKPViewModal.php";
+                                include "../../../data/view/editIKUKPViewModal.php";
+                                include "../../../data/view/deleteIKUKPModal.php";
+                            ?>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        
+        <script src='../../../bootstrap/js/jquery.js'></script>
+        <script src='../../../bootstrap/js/bootstrap.js'></script>
         
     </body>
 </html>

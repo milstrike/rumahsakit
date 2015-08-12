@@ -23,9 +23,11 @@ $error='';
 if (isset($_POST['submitDelete'])) {
 $id=$_POST['id'];
 
-$sqlx = "DELETE FROM rumahsakit.e_2_kepanitiaan_tim_kerja WHERE e_2_kepanitiaan_tim_kerja.id='$id'";
-$queryx = mysql("rumahsakit", $sqlx);    
+$sqlx = "DELETE FROM a3821629_rs.e_2_kepanitiaan_tim_kerja WHERE e_2_kepanitiaan_tim_kerja.id='$id'";
+$queryx = mysql("a3821629_rs", $sqlx); 
 
-header("Refresh:0");
+
+
+//header("Refresh:0");
 }
 

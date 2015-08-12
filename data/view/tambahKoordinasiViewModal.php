@@ -19,7 +19,7 @@
 
         echo 
             "
-            <div id='tambah' class='modal hide fade' tabindex='-1' role='dialog' aria-labelledby='tambah' aria-hidden='true'>
+            <div id='tambah' class='modal hide'' tabindex='-1' role='dialog' aria-labelledby='tambah' aria-hidden='true'>
             <div class='modal-header' style='background-color: #149bdf;'>
             <button type='button' class='close' data-dismiss='modal' aria-hidden='true'>×</button>
             <h3 id='myModalLabel' style='color: #fff;'>Tambah Data Level Koordinasi</h3>
@@ -27,9 +27,9 @@
             <div class='modal-body'>
                 <form class='form-horizontal' action='' method='post'>
                                 <div class='control-group'>
-                                    <label class='control-label' for='keterangan'>Keterangan*</label>
+                                    <label class='control-label' for='keterangan'>Jumlah Bawahan*</label>
                                     <div class='controls'>
-                                        <input id='keterangan' name='keterangan' type='text' required='required' placeholder='Contoh: JUMLAH BAWAHAN < 2'>
+                                        <input id='keterangan' name='keterangan' type='text' required='required' placeholder='Contoh: 2'>
                                     </div>
                                 </div>
                                 <div class='control-group'>

@@ -31,10 +31,10 @@ $keteranganKepegawaian2=$_POST['keteranganKepegawaian'];
 $poinKepegawaian2=$_POST['poinKepegawaian'];
 
     
-$sqlx = "INSERT INTO rumahsakit.a_2_kepegawaian (id, keterangan, poin) VALUES (NULL, '$keteranganKepegawaian2', '$poinKepegawaian2')";
-$queryx = mysql("rumahsakit", $sqlx);    
+$sqlx = "INSERT INTO a3821629_rs.a_2_kepegawaian (id, keterangan, poin) VALUES (NULL, '$keteranganKepegawaian2', '$poinKepegawaian2')";
+$queryx = mysql("a3821629_rs", $sqlx);    
 
-header("Refresh:0");
+//header("Refresh:0");
 
 }
 }

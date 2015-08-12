@@ -44,7 +44,7 @@ $username = mysql_real_escape_string($username);
 $password = mysql_real_escape_string($password);
 
 // SQL query to fetch information of registerd users and finds user match.
-$query = mysql("rumahsakit", "select * from user where password='$password' AND username='$username'");
+$query = mysql("a3821629_rs", "select * from user where password='$password' AND username='$username'");
 $rows = mysql_num_rows($query);
 if ($rows == 1) {
 $_SESSION['status'] = "1";
@@ -52,7 +52,19 @@ $_SESSION['login_user']=$username; // Initializing Session
 storing($username);
 //$error = "Berhasil Login!";
 
-header("Location:mechanism/landing"); // Redirecting To Other Page
+
+$userRole = $_SESSION['role'];
+
+switch($userRole){
+    case 1:
+        header("Location:mechanism/landing");
+        break;
+    
+    case 2:
+        header("Location:mechanism/takeoff");
+        break;
+}
+
 } else {
 $error = "<font color='red'>username atau password salah!</font>";
 }

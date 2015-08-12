@@ -6,14 +6,13 @@
         include "../../../../class/initTitle.php";
         include "../../../../data/basic.php";
         include "../../../../data/tambahStruktural.php";
-        include "../../../../data/EditStruktural.php";
+        include "../../../../data/editStruktural.php";
         include "../../../../data/deleteStruktural.php";
         include "../../../../class/logout.php";
         if(empty ($_SESSION['status'])){
             header("Location:../../../../"); // Redirecting To Other Page
         }
-        ?>
-        ?>        
+        ?> 
         <link href='../../../../bootstrap/css/bootstrap.css' rel='stylesheet' media='screen'>
         <link href='../../../../bootstrap/css/bootstrap-responsive.css' rel='stylesheet' media='screen'>
         <link href='../../../../bootstrap/css/custom.css' rel='stylesheet' media='screen'>
@@ -42,8 +41,9 @@
             <div class="row-fluid">
                 <div class="span12">
                     <div class="row-fluid">
-                        <div class="span3 panelSide boxShadow bs-docs-sidebar">
-                            <div class="boxBA">
+                        <div class="span3">
+                            <div class="panelSide boxShadow">
+                                <div class="boxBA">
                                 <strong>Detail Akun</strong>
                             </div>
                             <div class="boxBC">
@@ -76,6 +76,7 @@
                                 <form action="" method="post">
                                     <button type="submit" id="logout" name="logout" class="btn btn-block btn-warning buttonLock">Logout!</button>
                                 </form>
+                            </div>
                             </div>
                         </div>
                         

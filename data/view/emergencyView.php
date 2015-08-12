@@ -21,7 +21,7 @@
 
 $counter = 1;
 $sql = "select * from d_2_tingkat_emergensi ORDER BY d_2_tingkat_emergensi.poin ASC";
-$query = mysql("rumahsakit", "select * from d_2_tingkat_emergensi ORDER BY d_2_tingkat_emergensi.poin ASC");
+$query = mysql("a3821629_rs", "select * from d_2_tingkat_emergensi ORDER BY d_2_tingkat_emergensi.poin ASC");
 $rows = mysql_num_rows($query);
 if($rows > 0){
     while($row = mysql_fetch_assoc($query)){

@@ -138,7 +138,7 @@ CREATE TABLE IF NOT EXISTS `config` (
 --
 
 INSERT INTO `config` (`id`, `name`, `value`, `changes`) VALUES
-(1, 'site_name', 'Sistem Informasi Pegawai', '2015-06-26 14:17:11'),
+(1, 'site_name', 'Sistem Informasi Pegawai - (Technical Preview)', '2015-06-26 14:17:11'),
 (2, 'site_description', '   Selamat Datang di Sistem Penilaian Pegawai. Dengan menggunakan sistem ini, Anda dapat melakukan penilaian terhadap pegawai di perusahaan Anda.', '2015-06-26 14:10:00');
 
 -- --------------------------------------------------------

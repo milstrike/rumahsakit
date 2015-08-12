@@ -19,7 +19,7 @@
 
         echo 
             "
-            <div id='tambah' class='modal hide fade' tabindex='-1' role='dialog' aria-labelledby='tambah' aria-hidden='true'>
+            <div id='tambah' class='modal hide'' tabindex='-1' role='dialog' aria-labelledby='tambah' aria-hidden='true'>
             <div class='modal-header' style='background-color: #149bdf;'>
             <button type='button' class='close' data-dismiss='modal' aria-hidden='true'>×</button>
             <h3 id='myModalLabel' style='color: #fff;'>Tambah Data Struktural</h3>

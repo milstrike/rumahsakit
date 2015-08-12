@@ -44,7 +44,6 @@ body{
 
 .boxMain{
     background-color: #fcfcfc; 
-    border-radius: 5px;
     box-shadow: 8px 8px 5px #888888;
 }
 
@@ -61,7 +60,6 @@ body{
     background: -ms-linear-gradient(top,  #ff3019 0%,#cf0404 100%); /* IE10+ */
     background: linear-gradient(to bottom,  #ff3019 0%,#cf0404 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3019', endColorstr='#cf0404',GradientType=0 ); /* IE6-9 */    
-    border-radius: 5px; 
     padding: 5px; 
     color: #fff;
 }
@@ -90,6 +88,7 @@ body{
     font-style: italic;
     font-size: 12px;
     padding-top: 15px;
+    padding-bottom: 30px;
     line-height: 1;
 }
 
@@ -100,8 +99,14 @@ body{
 
 .panelSide{
     background-color: #ffffff; 
-    border-radius: 5px;
     height: 300px;
+    width: min-content;
+    position: fixed;
+}
+
+.panelNew{
+    padding: 5px;
+    margin: 5px; 
 }
 
 .boxBA{
@@ -113,7 +118,6 @@ body{
     background: -ms-linear-gradient(top,  #ff3019 0%,#cf0404 100%); /* IE10+ */
     background: linear-gradient(to bottom,  #ff3019 0%,#cf0404 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3019', endColorstr='#cf0404',GradientType=0 ); /* IE6-9 */    
-    border-radius: 5px;
     padding: 5px;
     margin: 5px; 
     color: #fff;
@@ -156,7 +160,6 @@ body{
 .bigPanel{
     background-color: #ffffff;
     padding: 10px;
-    border-radius: 5px;
 }
 
 /* unvisited link */

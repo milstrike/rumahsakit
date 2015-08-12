@@ -21,16 +21,16 @@
 
 $counter = 1;
 $sql = "select * from e_3_level_koordinasi";
-$query = mysql("rumahsakit", "select * from e_3_level_koordinasi");
+$query = mysql("a3821629_rs", "select * from e_3_level_koordinasi");
 $rows = mysql_num_rows($query);
 if($rows > 0){
     while($row = mysql_fetch_assoc($query)){
         $id = $row['id'];
-        $keterangan = $row['keterangan'];
+        $keterangan = $row['jumlah'];
         $poin = $row['poin'];
         echo 
             "
-            <div id='delete".$counter."' class='modal hide fade' tabindex='-1' role='dialog' aria-labelledby='delete".$counter."' aria-hidden='true'>
+            <div id='delete".$counter."' class='modal hide'' tabindex='-1' role='dialog' aria-labelledby='delete".$counter."' aria-hidden='true'>
             <div class='modal-header' style='background-color: #149bdf;'>
             <button type='button' class='close' data-dismiss='modal' aria-hidden='true'>×</button>
             <h3 id='myModalLabel' style='color: #fff;'>Hapus Data Level Koordinasi</h3>
@@ -39,7 +39,7 @@ if($rows > 0){
                 <form action='' method='post'>
                 <input id='id' name='id' type='text' class='uneditable-input' value='".$id."' style='display:none;'>
                 <p align='center'>
-                Apakah Anda yakin ingin menghapus data untuk level koordinasi: <strong>".$keterangan."</strong> dengan nilai poin <strong>".$poin."</strong>?. Anda tidak bisa mengembalikan lagi data yang sudah dihapus!
+                Apakah Anda yakin ingin menghapus data untuk level koordinasi dengan jumlah bawahan: <strong>".$keterangan."</strong> dengan nilai poin <strong>".$poin."</strong>?. Anda tidak bisa mengembalikan lagi data yang sudah dihapus!
                 </p>
                 <p align='right'>
                 <button type='submit' id='submitDelete' name='submitDelete' class='btn btn-danger'><i class='icon-remove icon-white'></i>&nbsp;<strong>Hapus Data ini!</strong></button><br/>

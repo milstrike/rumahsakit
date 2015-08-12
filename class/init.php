@@ -21,7 +21,7 @@
     echo "<meta name='viewport' content='width=device-width, initial-scale=1.0'>";
     
     //Title Site
-    echo "<title>Sistem Informasi Pegawai</title>";
+    echo "<title>Sistem Informasi Pegawai - (Technical Preview)</title>";
 
     echo "<link href='bootstrap/css/bootstrap.css' rel='stylesheet' media='screen'>";
     echo "<link href='bootstrap/css/bootstrap-responsive.css' rel='stylesheet' media='screen'>";

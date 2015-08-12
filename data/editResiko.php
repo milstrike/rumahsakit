@@ -32,12 +32,12 @@ $keterangan=$_POST['keterangan'];
 $poin=$_POST['poin'];
 
 
-$sqlx = "UPDATE rumahsakit.c_1_resiko SET keterangan='$keterangan', poin='$poin' WHERE c_1_resiko.id='$id'";
-$queryx = mysql("rumahsakit", $sqlx);    
+$sqlx = "UPDATE a3821629_rs.c_1_resiko SET keterangan='$keterangan', poin='$poin' WHERE c_1_resiko.id='$id'";
+$queryx = mysql("a3821629_rs", $sqlx);    
 
 
 //header("Location:../apps/konfigurasi_poin/konfigurasi_poin_masa_kerja");
-header("Refresh:0");
+//header("Refresh:0");
 }
 }
 

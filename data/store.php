@@ -25,21 +25,24 @@ $id_user = "";
 $namaUser = "";
 $jabatanUser = "";
 $teleponUser = "";
+$roleUser = 0;
 
-$query = mysql("rumahsakit", "select * from user where username='$username'");
+$query = mysql("a3821629_rs", "select * from user where username='$username'");
 while($row = mysql_fetch_assoc($query)) {
          $id_user = $row["id"];
+         $roleUser = $row['level'];
    }
    
-$query2 = mysql("rumahsakit", "select * from user_detail where id='$id_user'");
+$query2 = mysql("a3821629_rs", "select * from user_detail where id='$id_user'");
 while($row = mysql_fetch_assoc($query2)) {
          $namaUser = $row["nama"];
          $jabatanUser = $row["jabatan"];
          $teleponUser = $row["telepon"];
+         
    }
    
 $_SESSION['nama'] = $namaUser;
 $_SESSION['jabatan'] = $jabatanUser;
 $_SESSION['telepon'] = $teleponUser;
+$_SESSION['role'] = $roleUser;
 }
-

@@ -20,13 +20,13 @@
 //include "../my-conf.php";
 
 $counter = 1;
-$sql = "select * from e_3_level_koordinasi ORDER BY e_3_level_koordinasi.poin ASC";
-$query = mysql("rumahsakit", "select * from e_3_level_koordinasi ORDER BY e_3_level_koordinasi.poin ASC");
+$sql = "select * from e_3_level_koordinasi ORDER BY e_3_level_koordinasi.jumlah ASC";
+$query = mysql("a3821629_rs", "select * from e_3_level_koordinasi ORDER BY e_3_level_koordinasi.jumlah ASC");
 $rows = mysql_num_rows($query);
 if($rows > 0){
     while($row = mysql_fetch_assoc($query)){
         $id = $row["id"];
-        $keterangan = $row["keterangan"];
+        $keterangan = $row["jumlah"];
         $poin = $row["poin"];
         echo 
             "<tr>

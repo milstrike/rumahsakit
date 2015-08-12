@@ -21,7 +21,7 @@
 
 $counter = 1;
 $sql = "select * from e_2_kepanitiaan_tim_kerja";
-$query = mysql("rumahsakit", "select * from  e_2_kepanitiaan_tim_kerja");
+$query = mysql("a3821629_rs", "select * from  e_2_kepanitiaan_tim_kerja");
 $rows = mysql_num_rows($query);
 if($rows > 0){
     while($row = mysql_fetch_assoc($query)){
@@ -30,7 +30,7 @@ if($rows > 0){
         $poin = $row["poin"];
         echo 
             "
-            <div id='edit".$counter."' class='modal hide fade' tabindex='-1' role='dialog' aria-labelledby='edit".$counter."' aria-hidden='true'>
+            <div id='edit".$counter."' class='modal hide'' tabindex='-1' role='dialog' aria-labelledby='edit".$counter."' aria-hidden='true'>
             <div class='modal-header' style='background-color: #149bdf;'>
             <button type='button' class='close' data-dismiss='modal' aria-hidden='true'>×</button>
             <h3 id='myModalLabel' style='color: #fff;'>Edit Data Kepanitiaan</h3>

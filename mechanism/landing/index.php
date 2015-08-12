@@ -38,8 +38,9 @@
             <div class="row-fluid">
                 <div class="span12">
                     <div class="row-fluid">
-                        <div class="span3 panelSide boxShadow bs-docs-sidebar">
-                            <div class="boxBA">
+                        <div class="span3">
+                            <div class="panelSide boxShadow">
+                                <div class="boxBA">
                                 <strong>Detail Akun</strong>
                             </div>
                             <div class="boxBC">
@@ -73,6 +74,7 @@
                                     <button type="submit" id="logout" name="logout" class="btn btn-block btn-warning buttonLock">Logout!</button>
                                 </form>
                                 
+                            </div>
                             </div>
                         </div>
                         
@@ -115,7 +117,29 @@
                                         <a href="../apps/bantuan_sistem/" title="Dapatkan bantuan sistem di sini."><strong>Bantuan Sistem</strong></a>
                                     </td>
                                 </tr>
+                                <tr>
+                                    <td widtch="20%" class="firstColumn">
+                                        <img src="../../assets/icon-uses/bantuan.png" alt="icon-bantuan"/>
+                                    </td>
+                                    <td width="80%" class="anotherColumn">
+                                        <a href="../apps/change_log/" title="Dapatkan Daftar Perubahan di sini."><strong>Daftar Perubahan dan Pengembangan</strong></a>
+                                    </td>
+                                </tr>
                             </table>
+                            <br/>
+                            
+                            <legend>Kepanitiaan</legend>
+                                <table width="100%" border="0" cellpadding="5" cellspacing="5">
+                                <tr>
+                                    <td widtch="20%" class="firstColumn">
+                                        <img src="../../assets/icon-uses/kepanitiaan.png" alt="icon-user"/>
+                                    </td>
+                                    <td width="80%" class="anotherColumn">
+                                        <a href="../apps/daftar_kepanitiaan/" title="Manajemen user yang menggunakan sistem"><strong>Daftar Kepanitiaan</strong></a>
+                                    </td>
+                                </tr>
+                            </table>
+                                
                             </div>
                             
                             <div class="span4">
@@ -126,7 +150,7 @@
                                             <img src="../../assets/icon-uses/plus.png" alt="icon-tambah"/>
                                         </td>
                                         <td width="80%" class="anotherColumn">
-                                            <a href="#" title="Tambah Pegawai yang terdaftar di institusi"><strong>Tambah Pegawai...</strong></a>
+                                            <a href="../apps/tambah_pegawai/" title="Tambah Pegawai yang terdaftar di institusi"><strong>Tambah Pegawai...</strong></a>
                                         </td>
                                     </tr>
                                     <tr>
@@ -136,6 +160,30 @@
                                         <td width="80%" class="anotherColumn">
                                             <a href="../apps/manajemen_pegawai/" title="Manajemen Pegawai yang terdaftar di institusi"><strong>Manajemen Pegawai</strong></a>
                                         </td>
+                                    </tr>
+                                    <tr>
+                                    <td widtch="20%" class="firstColumn">
+                                        <img src="../../assets/icon-uses/group.png" alt="icon-user"/>
+                                    </td>
+                                    <td width="80%" class="anotherColumn">
+                                        <a href="../apps/manajemen_kelompok/" title="Manajemen kelompok"><strong>Manajemen Kelompok</strong></a>
+                                    </td>
+                                    </tr>
+                                    <tr>
+                                    <td widtch="20%" class="firstColumn">
+                                        <img src="../../assets/icon-uses/satker.png" alt="icon-user"/>
+                                    </td>
+                                    <td width="80%" class="anotherColumn">
+                                        <a href="../apps/satuan_kerja/" title="Manajemen Satuan Kerja"><strong>Manajemen Satuan Kerja</strong></a>
+                                    </td>
+                                    </tr>
+                                    <tr>
+                                    <td widtch="20%" class="firstColumn">
+                                        <img src="../../assets/icon-uses/bawahan.png" alt="icon-user"/>
+                                    </td>
+                                    <td width="80%" class="anotherColumn">
+                                        <a href="../apps/koordinasi/" title="Manajemen Koordinasi"><strong>Manajemen Level Koordinasi</strong></a>
+                                    </td>
                                     </tr>
                                 </table>
                                 
@@ -209,14 +257,22 @@
                                     </tr>
                                 </table>
                                 <br/>
-                                <legend>Laporan Gaji</legend>
+                                <legend>Manajemen Laporan</legend>
                                 <table width="100%" border="0" cellpadding="5" cellspacing="5">
                                     <tr>
                                         <td widtch="20%" class="firstColumn">
                                             <img src="../../assets/icon-uses/laporan.png" alt="icon-laporan"/>
                                         </td>
                                         <td width="80%" class="anotherColumn">
-                                            <a href="#" title="Manajemen Laporan Penggajian"><strong>Manajemen Laporan</strong></a>
+                                            <a href="../apps/manajemen_penilaian/" title="Manajemen Laporan Penilaian"><strong>Manajemen Laporan Penilaian</strong></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td widtch="20%" class="firstColumn">
+                                            <img src="../../assets/icon-uses/laporan.png" alt="icon-laporan"/>
+                                        </td>
+                                        <td width="80%" class="anotherColumn">
+                                            <a href="../apps/manajemen_penggajian/" title="Manajemen Laporan Penggajian"><strong>Manajemen Laporan Penggajian</strong></a>
                                         </td>
                                     </tr>
                                 </table>
@@ -227,6 +283,15 @@
                 </div>
             </div>
         </div>
+        
+        <div class="container">
+        <div class="row-fluid">
+            <div class="span12 footerGeneral">
+                &copy; 2015<br/>
+                by UNY Developer Network
+            </div>
+        </div>
+    </div>
         
     </body>
 </html>

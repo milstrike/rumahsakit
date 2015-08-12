@@ -7,14 +7,15 @@
         include "../../../data/basic.php";
         include "../../../data/createNewAccount.php";
         include "../../../class/logout.php";
+        include "../../../data/view/optionRole.php";
         if(empty ($_SESSION['status'])){
             header("Location:../../../"); // Redirecting To Other Page
         }
         ?>
-        ?>        
         <link href='../../../bootstrap/css/bootstrap.css' rel='stylesheet' media='screen'>
         <link href='../../../bootstrap/css/bootstrap-responsive.css' rel='stylesheet' media='screen'>
         <link href='../../../bootstrap/css/custom.css' rel='stylesheet' media='screen'>
+        <link href="../../../bootstrap/js/custom.js" type="text/javascript">
     </head>
     <body class="bodyBackground">
         
@@ -40,8 +41,9 @@
             <div class="row-fluid">
                 <div class="span12">
                     <div class="row-fluid">
-                        <div class="span3 panelSide boxShadow bs-docs-sidebar">
-                            <div class="boxBA">
+                        <div class="span3">
+                            <div class="panelSide boxShadow">
+                                <div class="boxBA">
                                 <strong>Detail Akun</strong>
                             </div>
                             <div class="boxBC">
@@ -74,6 +76,7 @@
                                 <form action="" method="post">
                                     <button type="submit" id="logout" name="logout" class="btn btn-block btn-warning buttonLock">Logout!</button>
                                 </form>
+                            </div>
                             </div>
                         </div>
                         
@@ -115,16 +118,14 @@
                                 <div class="control-group">
                                     <label class="control-label" for="telepon">No. Telepon*</label>
                                     <div class="controls">
-                                        <input id="telepon" name="telepon" type="text" placeholder="No. Telepon" class="span5" maxlength="20" required="required">
+                                        <input id="telepon" name="telepon" type="number" placeholder="No. Telepon" class="span5" maxlength="20" required="required" onkeypress="return isNumberKey(evt)">
                                     </div>
                                 </div>
                                 <div class="control-group">
                                     <label class="control-label" for="jabatan">Tingkatan*</label>
                                     <div class="controls">
                                         <select id="jabatan" name="jabatan" class="span5" required="required">
-                                            <option value="Super Admin">Super Admin</option>
-                                            <option value="Admin">Admin</option>
-                                            <option value="Pejabat Penilai">Pejabat Penilai</option>
+                                            <?php echo $optionRoles;  ?>
                                         </select>
                                     </div>
                                 </div>

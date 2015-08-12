@@ -5,14 +5,13 @@
         include "../../../class/router.php";
         include "../../../class/initTitle.php";
         include "../../../data/basic.php";
-        include "../../../data/EditAccount.php";
+        include "../../../data/editAccount.php";
         include "../../../data/deleteAccount.php";
         include "../../../data/resetPassword.php";
         include "../../../class/logout.php";
         if(empty ($_SESSION['status'])){
             header("Location:../../../"); // Redirecting To Other Page
         }
-        ?>
         ?>        
         <link href='../../../bootstrap/css/bootstrap.css' rel='stylesheet' media='screen'>
         <link href='../../../bootstrap/css/bootstrap-responsive.css' rel='stylesheet' media='screen'>
@@ -42,8 +41,9 @@
             <div class="row-fluid">
                 <div class="span12">
                     <div class="row-fluid">
-                        <div class="span3 panelSide boxShadow bs-docs-sidebar">
-                            <div class="boxBA">
+                        <div class="span3">
+                            <div class="panelSide boxShadow">
+                                <div class="boxBA">
                                 <strong>Detail Akun</strong>
                             </div>
                             <div class="boxBC">
@@ -77,6 +77,7 @@
                                     <button type="submit" id="logout" name="logout" class="btn btn-block btn-warning buttonLock">Logout!</button>
                                 </form>
                             </div>
+                            </div>
                         </div>
                         
                         <div class="span9 bigPanel boxShadow" id="bigPanel">
@@ -86,14 +87,15 @@
                                 </ul>
                             <p align="right">
                                 <a href="../buat_akun/"><button type="submit" id="edit" name="edit" class="btn btn-small"><i class="icon-plus-sign"></i>&nbsp;Tambah User</button></a>
-                                <a href="#"><button type="submit" id="edit" name="edit" class="btn btn-small"><i class="icon-user"></i>&nbsp;Manajemen Role</button></a>
+                                <a href="../manajemen_role/"><button type="submit" id="edit" name="edit" class="btn btn-small"><i class="icon-user"></i>&nbsp;Manajemen Role</button></a>
                             </p>    
                             <table width="100%" cellpadding="5" cellspacing="5" class="table table-bordered table-hover">
                                 <thead>
                                     <tr id="theadBasic">
                                         <td width="10%" id="thead">No</td>
                                         <td width="30%" id="thead">Nama</td>
-                                        <td width="30%" id="thead">Username</td>
+                                        <td width="15%" id="thead">Username</td>
+                                        <td width="15%" id="thead">Jabatan</td>
                                         <td width="30%" id="thead">Aksi</td>
                                     </tr>
                                 </thead>
