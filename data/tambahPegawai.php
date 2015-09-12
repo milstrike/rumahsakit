@@ -35,26 +35,26 @@ $perangkat = $_POST['perangkat'];
 $tanggal = $_POST['tahun']."-".$_POST['bulan']."-".$_POST['tanggal'];
 
 
-$sqlx = "INSERT INTO a3821629_rs.data_pegawai (id, nama, nip, golongan, satker, jabatan, kelompok, pendidikan, sertifikasi, perangkat, tanggal_masuk, change_date) VALUES (NULL, '$nama', '$nip', '$golongan', '$satker', '$jabatan', '$kelompok', '$pendidikan', '$sertifikasi', '$perangkat', '$tanggal', CURRENT_TIMESTAMP)";
-$queryx = mysql("a3821629_rs", $sqlx);  
+$sqlx = "INSERT INTO u6799722_rumahsakit.data_pegawai (id, nama, nip, golongan, satker, jabatan, kelompok, pendidikan, sertifikasi, perangkat, tanggal_masuk, change_date) VALUES (NULL, '$nama', '$nip', '$golongan', '$satker', '$jabatan', '$kelompok', '$pendidikan', '$sertifikasi', '$perangkat', '$tanggal', CURRENT_TIMESTAMP)";
+$queryx = mysql("u6799722_rumahsakit", $sqlx);  
 
 $id_pegawai = findID($nama);
 
-$sql = "INSERT INTO a3821629_rs.level_koordinasi (id_pegawai, id_level_koordinasi, poin) VALUES ('$id_pegawai', '0', '0')";
-$query = mysql("a3821629_rs", $sql);  
+$sql = "INSERT INTO u6799722_rumahsakit.level_koordinasi (id_pegawai, id_level_koordinasi, poin) VALUES ('$id_pegawai', '0', '0')";
+$query = mysql("u6799722_rumahsakit", $sql);  
 
     header("Location:../../apps/manajemen_pegawai/");
 
 
-/* $query = mysql("a3821629_rs", "select * from data_pegawai where nip='$nip'");
+/* $query = mysql("u6799722_rumahsakit", "select * from data_pegawai where nip='$nip'");
 $rows = mysql_num_rows($query);
 if ($rows == 1) {
 $error = "<font color='red'>Terjadi duplikasi data pegawai, Cek terlebih Dahulu!</font>";
 } 
 else if($rows == 0) {
 
-$sqlx = "INSERT INTO a3821629_rs.data_pegawai (id, nama, nip, satker, jabatan, kelompok, pendidikan, sertifikasi, perangkat, tanggal_masuk, change_date) VALUES (NULL, '$nama', '$nip', '$satker', '$jabatan', '$kelompok', '$pendidikan', '$sertifikasi', '$perangkat', '$tanggal', CURRENT_TIMESTAMP)";
-$queryx = mysql("a3821629_rs", $sqlx);    
+$sqlx = "INSERT INTO u6799722_rumahsakit.data_pegawai (id, nama, nip, satker, jabatan, kelompok, pendidikan, sertifikasi, perangkat, tanggal_masuk, change_date) VALUES (NULL, '$nama', '$nip', '$satker', '$jabatan', '$kelompok', '$pendidikan', '$sertifikasi', '$perangkat', '$tanggal', CURRENT_TIMESTAMP)";
+$queryx = mysql("u6799722_rumahsakit", $sqlx);    
 
     header("Location:../../apps/manajemen_pegawai/");
 

@@ -31,8 +31,8 @@ $keterangan=$_POST['keterangan'];
 $poin=$_POST['poin'];
 
     
-$sqlx = "INSERT INTO a3821629_rs.b_1_pendidikan (id, keterangan, poin) VALUES (NULL, '$keterangan', '$poin')";
-$queryx = mysql("a3821629_rs", $sqlx);    
+$sqlx = "INSERT INTO u6799722_rumahsakit.b_1_pendidikan (id, keterangan, poin) VALUES (NULL, '$keterangan', '$poin')";
+$queryx = mysql("u6799722_rumahsakit", $sqlx);    
 
 ////header("Refresh:0");
 

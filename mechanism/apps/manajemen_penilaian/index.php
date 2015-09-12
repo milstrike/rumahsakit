@@ -6,7 +6,7 @@
         include "../../../class/initTitle.php";
         include "../../../data/basic.php";
         include "../../../data/tambahDataNilai.php";
-        include "../../../data/editPerangkat.php";
+        //include "../../../data/editPerangkat.php";
         include "../../../data/deleteDataNilai.php";
         include "../../../data/launchPoinBulan.php";
         include "../../../class/logout.php";

@@ -23,7 +23,7 @@ include "../../../../data/view/dataExtractor.php";
 $idPanitia = $_SESSION['id_kepanitiaan'];
 $counter = 1;
 $sql = "select * from detail_kepanitiaan where id='$idPanitia'";
-$query = mysql("a3821629_rs", "select * from a3821629_rs.detail_kepanitiaan where detail_kepanitiaan.id='$idPanitia'");
+$query = mysql("u6799722_rumahsakit", "select * from u6799722_rumahsakit.detail_kepanitiaan where detail_kepanitiaan.id='$idPanitia'");
 $rows = mysql_num_rows($query);
 if($rows > 0){
     while($row = mysql_fetch_assoc($query)){

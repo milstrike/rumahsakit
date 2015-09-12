@@ -20,7 +20,7 @@
 //include "../my-conf.php";
 
 $sql = "select * from perangkat_rs ORDER BY perangkat_rs.keterangan ASC";
-$query = mysql("a3821629_rs", "select * from perangkat_rs ORDER BY perangkat_rs.keterangan ASC");
+$query = mysql("u6799722_rumahsakit", "select * from perangkat_rs ORDER BY perangkat_rs.keterangan ASC");
 $rows = mysql_num_rows($query);
 if($rows > 0){
     while($row = mysql_fetch_assoc($query)){

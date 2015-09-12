@@ -30,8 +30,8 @@ else
 $satker=$_POST['satker'];
 
     
-$sqlx = "INSERT INTO a3821629_rs.satker (id, satuan_kerja) VALUES (NULL, '$satker')";
-$queryx = mysql("a3821629_rs", $sqlx);    
+$sqlx = "INSERT INTO u6799722_rumahsakit.satker (id, satuan_kerja) VALUES (NULL, '$satker')";
+$queryx = mysql("u6799722_rumahsakit", $sqlx);    
 
 ////header("Refresh:0");
 

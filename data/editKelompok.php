@@ -31,8 +31,8 @@ $id=$_POST['id'];
 $kelompok=$_POST['kelompok'];
 
 
-$sqlx = "UPDATE a3821629_rs.kelompok SET kelompok='$kelompok' WHERE kelompok.id='$id'";
-$queryx = mysql("a3821629_rs", $sqlx);    
+$sqlx = "UPDATE u6799722_rumahsakit.kelompok SET kelompok='$kelompok' WHERE kelompok.id='$id'";
+$queryx = mysql("u6799722_rumahsakit", $sqlx);    
 
 
 //header("Location:../apps/konfigurasi_poin/konfigurasi_poin_masa_kerja");

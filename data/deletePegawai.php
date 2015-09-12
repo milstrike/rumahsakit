@@ -23,14 +23,14 @@ $error='';
 if (isset($_POST['submitDelete'])) {
 $id=$_POST['id'];
 
-$sqlx = "DELETE FROM a3821629_rs.data_pegawai WHERE data_pegawai.id='$id'";
-$queryx = mysql("a3821629_rs", $sqlx);
+$sqlx = "DELETE FROM u6799722_rumahsakit.data_pegawai WHERE data_pegawai.id='$id'";
+$queryx = mysql("u6799722_rumahsakit", $sqlx);
 
-$sqlc = "DELETE FROM a3821629_rs.level_koordinasi WHERE level_koordinasi.id_pegawai='$id'";
-$queryc = mysql("a3821629_rs", $sqlc);
+$sqlc = "DELETE FROM u6799722_rumahsakit.level_koordinasi WHERE level_koordinasi.id_pegawai='$id'";
+$queryc = mysql("u6799722_rumahsakit", $sqlc);
 
-$sqls = "DELETE FROM a3821629_rs.detail_kepanitiaan WHERE detail_kepanitiaan.id_pegawai='$id'";
-$querys = mysql("a3821629_rs", $sqls);
+$sqls = "DELETE FROM u6799722_rumahsakit.detail_kepanitiaan WHERE detail_kepanitiaan.id_pegawai='$id'";
+$querys = mysql("u6799722_rumahsakit", $sqls);
 
 //header("Refresh:0");
 }

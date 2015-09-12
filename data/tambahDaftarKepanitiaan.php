@@ -31,8 +31,8 @@ $namaKepanitiaan=$_POST['namaKepanitiaan'];
 $keteranganKepanitiaan=$_POST['keteranganKepanitiaan'];
 
     
-$sqlx = "INSERT INTO a3821629_rs.daftar_kepanitiaan (id, nama_kepanitiaan, detail_kepanitiaan, change_date) VALUES (NULL, '$namaKepanitiaan', '$keteranganKepanitiaan', NULL)";
-$queryx = mysql("a3821629_rs", $sqlx);    
+$sqlx = "INSERT INTO u6799722_rumahsakit.daftar_kepanitiaan (id, nama_kepanitiaan, detail_kepanitiaan, change_date) VALUES (NULL, '$namaKepanitiaan', '$keteranganKepanitiaan', NULL)";
+$queryx = mysql("u6799722_rumahsakit", $sqlx);    
 
 //header("Refresh:0");
 

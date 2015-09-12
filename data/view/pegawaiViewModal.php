@@ -22,8 +22,8 @@
 include "dataExtractor.php";
 
 $counter = 1;
-$sql = "select * from a3821629_rs.data_pegawai ORDER BY data_pegawai.nama ASC";
-$query = mysql("a3821629_rs", "select * from a3821629_rs.data_pegawai ORDER BY data_pegawai.nama ASC");
+$sql = "select * from u6799722_rumahsakit.data_pegawai ORDER BY data_pegawai.nama ASC";
+$query = mysql("u6799722_rumahsakit", "select * from u6799722_rumahsakit.data_pegawai ORDER BY data_pegawai.nama ASC");
 $rows = mysql_num_rows($query);
 if($rows > 0){
     while($row = mysql_fetch_assoc($query)){

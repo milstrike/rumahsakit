@@ -26,14 +26,14 @@ if (isset($_POST['isiTabel'])) {
     $namaTabel = $_SESSION['tabel'];
     
     $hapusTabel = "TRUNCATE ".$namaTabel;
-    $hapus = mysql("a3821629_rs", $hapusTabel);
+    $hapus = mysql("u6799722_rumahsakit", $hapusTabel);
     
     //echo $namaTabel;
       
 
 $counter = 1;
-$sql = "select * from a3821629_rs.data_pegawai";
-$query = mysql("a3821629_rs", $sql);
+$sql = "select * from u6799722_rumahsakit.data_pegawai";
+$query = mysql("u6799722_rumahsakit", $sql);
 $rows = mysql_num_rows($query);
 if($rows > 0){
     while($row = mysql_fetch_assoc($query)){
@@ -109,7 +109,19 @@ $tt = hitungPoinKepanitiaan($ss);
         $total = $basic_index + $capacity_index + $risk_index + $emergency_index + $position_index + $performance_index;
                   
         $sqlx = "INSERT INTO ".$namaTabel." (id, id_pegawai, masa_kerja, gaji_pokok, golongan, basic_index, pendidikan, sertifikasi, capacity_index, level_resiko, risk_index, level_emergency, emergency_index, struktural, level_koordinasi, kepanitiaan, position_index, ikip, ikukp, performance_index) VALUES (NULL, '$id', '$b', '$ee', '$bb', '$basic_index', '$gg', '$ii', '$capacity_index', '$kk', '$risk_index', '$ll', '$emergency_index', '$oo', '$qq', '$tt', '$position_index', '$basic', '$basic', '$performance_index')";
-        $queryx = mysql("a3821629_rs", $sqlx); 
+        $queryx = mysql("u6799722_rumahsakit", $sqlx);
+        
+        $sqly = "CREATE TABLE ".$id."_ikip_".$namaTabel." LIKE master_ikip";
+        $queryy = mysql("u6799722_rumahsakit", $sqly);  
+        
+        $sqlyx = "INSERT ".$id."_ikip_".$namaTabel." SELECT * FROM master_ikip";
+        $queryyx = mysql("u6799722_rumahsakit", $sqlyx);
+        
+        $sqlt = "CREATE TABLE ".$id."_ikukp_".$namaTabel." LIKE master_ikukp";
+        $quertt = mysql("u6799722_rumahsakit", $sqlt); 
+        
+        $sqltx = "INSERT ".$id."_ikukp_".$namaTabel." SELECT * FROM master_ikukp";
+        $querttx = mysql("u6799722_rumahsakit", $sqltx);
     }
 }
 }

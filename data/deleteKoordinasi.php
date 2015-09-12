@@ -23,8 +23,8 @@ $error='';
 if (isset($_POST['submitDelete'])) {
 $id=$_POST['id'];
 
-$sqlx = "DELETE FROM a3821629_rs.e_3_level_koordinasi WHERE e_3_level_koordinasi.id='$id'";
-$queryx = mysql("a3821629_rs", $sqlx);    
+$sqlx = "DELETE FROM u6799722_rumahsakit.e_3_level_koordinasi WHERE e_3_level_koordinasi.id='$id'";
+$queryx = mysql("u6799722_rumahsakit", $sqlx);    
 
 //header("Refresh:0");
 }

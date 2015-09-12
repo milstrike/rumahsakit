@@ -42,8 +42,8 @@ $poin_emergency = $data4;
 
 
 
-$sqlx = "UPDATE a3821629_rs.perangkat_rs SET keterangan='$namaPerangkat', level_risk='$level_risk', poin_risk='$poin_risk', level_emergency='$level_emergency', poin_emergency='$poin_emergency', change_date=NULL WHERE perangkat_rs.id='$id'";
-$queryx = mysql("a3821629_rs", $sqlx);    
+$sqlx = "UPDATE u6799722_rumahsakit.perangkat_rs SET keterangan='$namaPerangkat', level_risk='$level_risk', poin_risk='$poin_risk', level_emergency='$level_emergency', poin_emergency='$poin_emergency', change_date=NULL WHERE perangkat_rs.id='$id'";
+$queryx = mysql("u6799722_rumahsakit", $sqlx);    
 
 
 //header("Location:../apps/konfigurasi_poin/konfigurasi_poin_masa_kerja");

@@ -33,7 +33,7 @@ function BasicConfiguration($var){
 }
 
 function executors($adb){
-   $query = mysql("a3821629_rs", $adb);
+   $query = mysql("u6799722_rumahsakit", $adb);
    if (! $query){
          throw new mysqli_sql_exception('Database error: ' . mysql_error());
    }

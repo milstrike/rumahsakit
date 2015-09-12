@@ -40,8 +40,8 @@ $level_emergency = $data3;
 $poin_emergency = $data4;
 
     
-$sqlx = "INSERT INTO a3821629_rs.perangkat_rs (id, keterangan, level_risk, poin_risk, level_emergency, poin_emergency, change_date) VALUES (NULL, '$namaPerangkat', '$level_risk', '$poin_risk', '$level_emergency', '$poin_emergency', NULL)";
-$queryx = mysql("a3821629_rs", $sqlx);    
+$sqlx = "INSERT INTO u6799722_rumahsakit.perangkat_rs (id, keterangan, level_risk, poin_risk, level_emergency, poin_emergency, change_date) VALUES (NULL, '$namaPerangkat', '$level_risk', '$poin_risk', '$level_emergency', '$poin_emergency', NULL)";
+$queryx = mysql("u6799722_rumahsakit", $sqlx);    
 
 ////header("Refresh:0");
 

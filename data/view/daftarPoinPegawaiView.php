@@ -25,7 +25,7 @@ $nama_tabel = $_SESSION['tabel'];
 
 $counter = 1;
 $sql = "select * from ".$nama_tabel;
-$query = mysql("a3821629_rs", $sql);
+$query = mysql("u6799722_rumahsakit", $sql);
 $rows = mysql_num_rows($query);
 if($rows > 0){
     while($row = mysql_fetch_assoc($query)){
@@ -46,7 +46,9 @@ if($rows > 0){
         $levelKoordinasi = $row["level_koordinasi"];
         $kepanitiaan = $row["kepanitiaan"];
         $positionIndex = $row["position_index"];
+        $sum_ikip = $row["sum_ikip"];
         $ikip = $row["ikip"];
+        $sum_ikukp = $row["sum_ikup"];
         $ikukp = $row["ikukp"];
         $performanceIndex = $row["performance_index"];
         
@@ -54,8 +56,8 @@ if($rows > 0){
         //ExtractData
         $namaPegawai = nama($id_pegawai);
         
-        $sqlp = "select * from a3821629_rs.data_pegawai where id='$id_pegawai'";
-        $queryp = mysql("a3821629_rs", "select * from a3821629_rs.data_pegawai where id='$id_pegawai'");
+        $sqlp = "select * from u6799722_rumahsakit.data_pegawai where id='$id_pegawai'";
+        $queryp = mysql("u6799722_rumahsakit", "select * from u6799722_rumahsakit.data_pegawai where id='$id_pegawai'");
         $rowp = mysql_fetch_array($queryp);
         
          $nip = $rowp["nip"];
@@ -197,16 +199,24 @@ if($rows > 0){
                                     
                                     <tr>
                                     <td>IKIP</td>
-                                    <td>On Progress</td>
-                                    <td></td>
-                                    <td>".$ikip."</td>
+                                    <td style='vertical-align:middle;'>".$sum_ikip."</td>
+                                    <td style='vertical-align:middle;'><form action='' method='post'>
+                                        <input id='id' name='id' type='text' class='uneditable-input' value='".$id_pegawai."_ikip_".$nama_tabel."' style='display:none;'>
+                                        <button type='submit' id='checkIKIP' name='checkIKIP' class='btn btn-primary btn-small'><i class='icon-check icon-white'></i>&nbsp;Edit IKIP</button><br/>   
+                                        </form>
+                                    </td>
+                                    <td style='vertical-align:middle;'>".$ikip."</td>
                                     </tr>
                                     
                                     <tr>
                                     <td>IKUKP</td>
-                                    <td>On Progress</td>
-                                    <td></td>
-                                    <td>".$ikukp."</td>
+                                    <td style='vertical-align:middle;'>".$sum_ikukp."</td>
+                                    <td style='vertical-align:middle;'><form action='' method='post'>
+                                        <input id='id' name='id' type='text' class='uneditable-input' value='".$id_pegawai."_ikukp_".$nama_tabel."' style='display:none;'>
+                                        <button type='submit' id='checkIKUKP' name='checkIKUKP' class='btn btn-primary btn-small'><i class='icon-check icon-white'></i>&nbsp;Edit IKUKP</button><br/>   
+                                        </form>
+                                    </td>
+                                    <td style='vertical-align:middle;'>".$ikukp."</td>
                                     </tr>
                                     
                                 </tbody>

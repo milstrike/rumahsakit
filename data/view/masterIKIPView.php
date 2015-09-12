@@ -21,7 +21,7 @@
 
 $counter = 1;
 $sql = "select * from master_ikip ORDER BY master_ikip.kategori ASC";
-$query = mysql("a3821629_rs", "select * from master_ikip ORDER BY master_ikip.kategori ASC");
+$query = mysql("u6799722_rumahsakit", "select * from master_ikip ORDER BY master_ikip.kategori ASC");
 $rows = mysql_num_rows($query);
 if($rows > 0){
     while($row = mysql_fetch_assoc($query)){

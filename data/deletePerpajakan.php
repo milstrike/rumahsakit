@@ -25,8 +25,8 @@ $id=$_POST['id'];
 $value = NULL;
 
 
-$sqlx = "UPDATE a3821629_rs.a_2_kepegawaian SET pajak='$value' WHERE a_2_kepegawaian.id='$id'";
-$queryx = mysql("a3821629_rs", $sqlx);    
+$sqlx = "UPDATE u6799722_rumahsakit.a_2_kepegawaian SET pajak='$value' WHERE a_2_kepegawaian.id='$id'";
+$queryx = mysql("u6799722_rumahsakit", $sqlx);    
 
 
 //header("Location:../apps/konfigurasi_poin/konfigurasi_poin_masa_kerja");

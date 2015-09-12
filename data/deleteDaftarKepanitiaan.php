@@ -24,10 +24,10 @@ if (isset($_POST['submitDelete'])) {
 $id=$_POST['id'];
 
 $sql = "DELETE FROM detail_kepanitiaan WHERE id='$id'";
-$query = mysql("a3821629_rs", $sql);
+$query = mysql("u6799722_rumahsakit", $sql);
 
-$sqlx = "DELETE FROM a3821629_rs.daftar_kepanitiaan WHERE daftar_kepanitiaan.id='$id'";
-$queryx = mysql("a3821629_rs", $sqlx);    
+$sqlx = "DELETE FROM u6799722_rumahsakit.daftar_kepanitiaan WHERE daftar_kepanitiaan.id='$id'";
+$queryx = mysql("u6799722_rumahsakit", $sqlx);    
 
 //header("Refresh:0");
 }

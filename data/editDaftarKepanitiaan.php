@@ -32,8 +32,8 @@ $namaKepanitiaan=$_POST['namaKepanitiaan'];
 $keteranganKepanitiaan=$_POST['keteranganKepanitiaan'];
 
 
-$sqlx = "UPDATE a3821629_rs.daftar_kepanitiaan SET nama_kepanitiaan='$namaKepanitiaan', detail_kepanitiaan='$keteranganKepanitiaan' WHERE daftar_kepanitiaan.id='$id'";
-$queryx = mysql("a3821629_rs", $sqlx);    
+$sqlx = "UPDATE u6799722_rumahsakit.daftar_kepanitiaan SET nama_kepanitiaan='$namaKepanitiaan', detail_kepanitiaan='$keteranganKepanitiaan' WHERE daftar_kepanitiaan.id='$id'";
+$queryx = mysql("u6799722_rumahsakit", $sqlx);    
 
 
 //header("Location:../apps/konfigurasi_poin/konfigurasi_poin_masa_kerja");

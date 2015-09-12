@@ -29,8 +29,8 @@ $passView6 = md5($passView6);
 
 
 
-$sqlx = "UPDATE a3821629_rs.user SET password='$passView6', pass_umask='$passNormal'  WHERE user.id='$id6'";
-$queryx = mysql("a3821629_rs", $sqlx);    
+$sqlx = "UPDATE u6799722_rumahsakit.user SET password='$passView6', pass_umask='$passNormal'  WHERE user.id='$id6'";
+$queryx = mysql("u6799722_rumahsakit", $sqlx);    
 
 header("Location:../../apps/manajemen_user/");
 }

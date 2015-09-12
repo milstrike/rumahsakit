@@ -23,7 +23,7 @@ function golongan($num){
     
     $dataGolongan = "";
     
-    $query = mysql("a3821629_rs", "select * from a3821629_rs.a_2_kepegawaian where a_2_kepegawaian.id='$num'");
+    $query = mysql("u6799722_rumahsakit", "select * from u6799722_rumahsakit.a_2_kepegawaian where a_2_kepegawaian.id='$num'");
     $row = mysql_fetch_array($query);
     $dataGolongan = $row['keterangan'];
     
@@ -34,7 +34,7 @@ function satker($num){
     
     $dataSatker = "";
     
-    $query = mysql("a3821629_rs", "select satuan_kerja from a3821629_rs.satker where satker.id='$num'");
+    $query = mysql("u6799722_rumahsakit", "select satuan_kerja from u6799722_rumahsakit.satker where satker.id='$num'");
     $row = mysql_fetch_array($query);
     $dataSatker = $row['satuan_kerja'];
     
@@ -45,7 +45,7 @@ function jabatan($num){
     
     $dataJabatan = "";
     
-    $query = mysql("a3821629_rs", "select keterangan from a3821629_rs.e_1_struktural where e_1_struktural.id='$num'");
+    $query = mysql("u6799722_rumahsakit", "select keterangan from u6799722_rumahsakit.e_1_struktural where e_1_struktural.id='$num'");
     $row = mysql_fetch_array($query);
     $dataJabatan = $row['keterangan'];
     
@@ -56,7 +56,7 @@ function kelompok($num){
     
     $dataKelompok = "";
     
-    $query = mysql("a3821629_rs", "select kelompok from a3821629_rs.kelompok where kelompok.id='$num'");
+    $query = mysql("u6799722_rumahsakit", "select kelompok from u6799722_rumahsakit.kelompok where kelompok.id='$num'");
     $row = mysql_fetch_array($query);
     $dataKelompok = $row['kelompok'];
     
@@ -67,7 +67,7 @@ function pendidikan($num){
     
     $dataPendidikan = "";
     
-    $query = mysql("a3821629_rs", "select keterangan from a3821629_rs.b_1_pendidikan where b_1_pendidikan.id='$num'");
+    $query = mysql("u6799722_rumahsakit", "select keterangan from u6799722_rumahsakit.b_1_pendidikan where b_1_pendidikan.id='$num'");
     $row = mysql_fetch_array($query);
     $dataPendidikan = $row['keterangan'];
     
@@ -78,7 +78,7 @@ function sertifikasi($num){
     
     $dataSertifikasi = "";
     
-    $query = mysql("a3821629_rs", "select keterangan from a3821629_rs.b_2_sertifikasi where b_2_sertifikasi.id='$num'");
+    $query = mysql("u6799722_rumahsakit", "select keterangan from u6799722_rumahsakit.b_2_sertifikasi where b_2_sertifikasi.id='$num'");
     $row = mysql_fetch_array($query);
     $dataSertifikasi = $row['keterangan'];
     
@@ -89,7 +89,7 @@ function perangkat($num){
     
     $dataPerangkat = "";
     
-    $query = mysql("a3821629_rs", "select keterangan from a3821629_rs.perangkat_rs where perangkat_rs.id='$num'");
+    $query = mysql("u6799722_rumahsakit", "select keterangan from u6799722_rumahsakit.perangkat_rs where perangkat_rs.id='$num'");
     $row = mysql_fetch_array($query);
     $dataPerangkat = $row['keterangan'];
     
@@ -100,7 +100,7 @@ function risk($num){
     
     $dataRisk = "";
     
-    $query = mysql("a3821629_rs", "select level_risk from a3821629_rs.perangkat_rs where perangkat_rs.id='$num'");
+    $query = mysql("u6799722_rumahsakit", "select level_risk from u6799722_rumahsakit.perangkat_rs where perangkat_rs.id='$num'");
     $row = mysql_fetch_array($query);
     $dataRisk = $row['level_risk'];
     
@@ -111,7 +111,7 @@ function emergency($num){
     
     $dataEmergency = "";
     
-    $query = mysql("a3821629_rs", "select level_emergency from a3821629_rs.perangkat_rs where perangkat_rs.id='$num'");
+    $query = mysql("u6799722_rumahsakit", "select level_emergency from u6799722_rumahsakit.perangkat_rs where perangkat_rs.id='$num'");
     $row = mysql_fetch_array($query);
     $dataEmergency = $row['level_emergency'];
     
@@ -130,7 +130,7 @@ function lamaKerja($then){
 function nama($num){
     $nama = "";
             
-    $query = mysql("a3821629_rs", "select nama from a3821629_rs.data_pegawai where data_pegawai.id='$num'");
+    $query = mysql("u6799722_rumahsakit", "select nama from u6799722_rumahsakit.data_pegawai where data_pegawai.id='$num'");
     $row = mysql_fetch_array($query);
     $nama = $row['nama'];
     return $nama;
@@ -138,7 +138,7 @@ function nama($num){
 
 function jabatanPanitia($num){
     $jabatan = "";
-    $query = mysql("a3821629_rs", "select * from e_2_kepanitiaan_tim_kerja where e_2_kepanitiaan_tim_kerja.id='$num'");
+    $query = mysql("u6799722_rumahsakit", "select * from e_2_kepanitiaan_tim_kerja where e_2_kepanitiaan_tim_kerja.id='$num'");
     $row = mysql_fetch_array($query);
     $jabatan = $row['keterangan'];
     return $jabatan;
@@ -146,7 +146,7 @@ function jabatanPanitia($num){
 
 function findID($num){
     $nama = "";
-    $query = mysql("a3821629_rs", "select * from data_pegawai where nama LIKE '$num'");
+    $query = mysql("u6799722_rumahsakit", "select * from data_pegawai where nama LIKE '$num'");
     $row = mysql_fetch_array($query);
     $nama = $row['id'];
     
@@ -156,7 +156,7 @@ function findID($num){
 
 function jumlahBawahan($num){
     $bawahan = "";
-    $query = mysql("a3821629_rs", "select * from e_3_level_koordinasi where jumlah='$num'");
+    $query = mysql("u6799722_rumahsakit", "select * from e_3_level_koordinasi where jumlah='$num'");
     $row = mysql_fetch_array($query);
     $bawahan = $row['jumlah'];
     
@@ -165,7 +165,7 @@ function jumlahBawahan($num){
 
 function getPoinLevelKoordinasi($num){
     $poin = "";
-    $query = mysql("a3821629_rs", "select * from e_3_level_koordinasi where jumlah='$num'");
+    $query = mysql("u6799722_rumahsakit", "select * from e_3_level_koordinasi where jumlah='$num'");
     $row = mysql_fetch_array($query);
     $poin = $row['poin'];
     
@@ -174,7 +174,7 @@ function getPoinLevelKoordinasi($num){
 
 function findPoinLevelKoordinasi($num){
     $poin = "";
-    $query = mysql("a3821629_rs", "select * from level_koordinasi where id_pegawai='$num'");
+    $query = mysql("u6799722_rumahsakit", "select * from level_koordinasi where id_pegawai='$num'");
     $row = mysql_fetch_array($query);
     $poin = $row['id_level_koordinasi'];
     
@@ -184,7 +184,7 @@ function findPoinLevelKoordinasi($num){
 
 function IDLevelKoordinasi($num){
     $poin = "";
-    $query = mysql("a3821629_rs", "select * from e_3_level_koordinasi where id='$num'");
+    $query = mysql("u6799722_rumahsakit", "select * from e_3_level_koordinasi where id='$num'");
     $row = mysql_fetch_array($query);
     $poin = $row['jumlah'];
     
@@ -242,7 +242,7 @@ function MonthSelector($num){
 function poinMasaKerja($num){
     $poin = 0;
     
-    $query = mysql("a3821629_rs", "select * from a3821629_rs.a_1_masa_kerja where a_1_masa_kerja.keterangan='$num'");
+    $query = mysql("u6799722_rumahsakit", "select * from u6799722_rumahsakit.a_1_masa_kerja where a_1_masa_kerja.keterangan='$num'");
     $row = mysql_fetch_array($query);
     $poin = $row['poin'];
     
@@ -252,7 +252,7 @@ function poinMasaKerja($num){
 
 function hitungPoinMasaKerja($num){
     $hitungPoin = 0;
-    $query = mysql("a3821629_rs", "select MAX(poin) as poin from a3821629_rs.a_1_masa_kerja");
+    $query = mysql("u6799722_rumahsakit", "select MAX(poin) as poin from u6799722_rumahsakit.a_1_masa_kerja");
     $row = mysql_fetch_array($query);
     $hitungPoin = $row['poin'];
     
@@ -264,7 +264,7 @@ function hitungPoinMasaKerja($num){
 function poinGolongan($num){
     $poin = 0;
     
-    $query = mysql("a3821629_rs", "select * from a3821629_rs.a_2_kepegawaian where a_2_kepegawaian.id='$num'");
+    $query = mysql("u6799722_rumahsakit", "select * from u6799722_rumahsakit.a_2_kepegawaian where a_2_kepegawaian.id='$num'");
     $row = mysql_fetch_array($query);
     $poin = $row['poin'];
     
@@ -273,7 +273,7 @@ function poinGolongan($num){
 
 function hitungPoinGolongan($num){
     $hitungPoin = 0;
-    $query = mysql("a3821629_rs", "select MAX(poin) as poin from a3821629_rs.a_2_kepegawaian");
+    $query = mysql("u6799722_rumahsakit", "select MAX(poin) as poin from u6799722_rumahsakit.a_2_kepegawaian");
     $row = mysql_fetch_array($query);
     $hitungPoin = $row['poin'];
     
@@ -285,7 +285,7 @@ function hitungPoinGolongan($num){
 function gajiPokok($num){
     $gaji = 0;
     
-    $query = mysql("a3821629_rs", "select * from a3821629_rs.a_2_kepegawaian where a_2_kepegawaian.id='$num'");
+    $query = mysql("u6799722_rumahsakit", "select * from u6799722_rumahsakit.a_2_kepegawaian where a_2_kepegawaian.id='$num'");
     $row = mysql_fetch_array($query);
     $gaji = $row['gaji'];
     
@@ -295,7 +295,7 @@ function gajiPokok($num){
 function pembagiGajiPokok($num1, $num2){
     $pembagi = 0;
     
-    $query = mysql("a3821629_rs", "select * from a3821629_rs.a_2_kepegawaian where a_2_kepegawaian.id='$num2'");
+    $query = mysql("u6799722_rumahsakit", "select * from u6799722_rumahsakit.a_2_kepegawaian where a_2_kepegawaian.id='$num2'");
     $row = mysql_fetch_array($query);
     $pembagi = $row['pembagi'];
     
@@ -312,7 +312,7 @@ function hitungGajiPokok($num1, $num2){
 function poinPendidikan($num){
     $poin = 0;
     
-    $query = mysql("a3821629_rs", "select * from a3821629_rs.b_1_pendidikan where b_1_pendidikan.id='$num'");
+    $query = mysql("u6799722_rumahsakit", "select * from u6799722_rumahsakit.b_1_pendidikan where b_1_pendidikan.id='$num'");
     $row = mysql_fetch_array($query);
     $poin = $row['poin'];
     
@@ -321,7 +321,7 @@ function poinPendidikan($num){
 
 function hitungPoinPendidikan($num){
     $poin = 0;
-    $query = mysql("a3821629_rs", "select MAX(poin) as poin from a3821629_rs.b_1_pendidikan");
+    $query = mysql("u6799722_rumahsakit", "select MAX(poin) as poin from u6799722_rumahsakit.b_1_pendidikan");
     $row = mysql_fetch_array($query);
     $poin = $row['poin'];
     
@@ -333,7 +333,7 @@ function hitungPoinPendidikan($num){
 function poinSertifikasi($num){
     $poin = 0;
     
-    $query = mysql("a3821629_rs", "select * from a3821629_rs.b_2_sertifikasi where b_2_sertifikasi.id='$num'");
+    $query = mysql("u6799722_rumahsakit", "select * from u6799722_rumahsakit.b_2_sertifikasi where b_2_sertifikasi.id='$num'");
     $row = mysql_fetch_array($query);
     $poin = $row['poin'];
     
@@ -342,7 +342,7 @@ function poinSertifikasi($num){
 
 function hitungPoinSertifikasi($num){
     $poin = 0;
-    $query = mysql("a3821629_rs", "select MAX(poin) as poin from a3821629_rs.b_2_sertifikasi");
+    $query = mysql("u6799722_rumahsakit", "select MAX(poin) as poin from u6799722_rumahsakit.b_2_sertifikasi");
     $row = mysql_fetch_array($query);
     $poin = $row['poin'];
     
@@ -354,7 +354,7 @@ function hitungPoinSertifikasi($num){
 function poinLevelResiko($num){
     $poin = 0;
     
-    $query = mysql("a3821629_rs", "select * from a3821629_rs.perangkat_rs where perangkat_rs.id='$num'");
+    $query = mysql("u6799722_rumahsakit", "select * from u6799722_rumahsakit.perangkat_rs where perangkat_rs.id='$num'");
     $row = mysql_fetch_array($query);
     $poin = $row['poin_risk'];
     
@@ -363,7 +363,7 @@ function poinLevelResiko($num){
 
 function hitungPoinLevelResiko($num){
     $poin = 0;
-    $query = mysql("a3821629_rs", "select MAX(poin_risk) as poin from a3821629_rs.perangkat_rs");
+    $query = mysql("u6799722_rumahsakit", "select MAX(poin_risk) as poin from u6799722_rumahsakit.perangkat_rs");
     $row = mysql_fetch_array($query);
     $poin = $row['poin'];
     
@@ -375,7 +375,7 @@ function hitungPoinLevelResiko($num){
 function poinGradeEmergency($num){
     $poin = 0;
     
-    $query = mysql("a3821629_rs", "select * from a3821629_rs.perangkat_rs where perangkat_rs.id='$num'");
+    $query = mysql("u6799722_rumahsakit", "select * from u6799722_rumahsakit.perangkat_rs where perangkat_rs.id='$num'");
     $row = mysql_fetch_array($query);
     $poin = $row['poin_emergency'];
     
@@ -384,7 +384,7 @@ function poinGradeEmergency($num){
 
 function hitungPoinGradeEmergency($num){
     $poin = 0;
-    $query = mysql("a3821629_rs", "select MAX(poin_emergency) as poin from a3821629_rs.perangkat_rs");
+    $query = mysql("u6799722_rumahsakit", "select MAX(poin_emergency) as poin from u6799722_rumahsakit.perangkat_rs");
     $row = mysql_fetch_array($query);
     $poin = $row['poin'];
     
@@ -396,7 +396,7 @@ function hitungPoinGradeEmergency($num){
 function poinStruktural($num){
     $poin = 0;
     
-    $query = mysql("a3821629_rs", "select * from a3821629_rs.e_1_struktural where e_1_struktural.id='$num'");
+    $query = mysql("u6799722_rumahsakit", "select * from u6799722_rumahsakit.e_1_struktural where e_1_struktural.id='$num'");
     $row = mysql_fetch_array($query);
     $poin = $row['poin'];
     
@@ -405,7 +405,7 @@ function poinStruktural($num){
 
 function hitungPoinStruktural($num){
     //$poin = 0;
-    //$query = mysql("a3821629_rs", "select MAX(poin) as poin from a3821629_rs.e_1_struktural");
+    //$query = mysql("u6799722_rumahsakit", "select MAX(poin) as poin from u6799722_rumahsakit.e_1_struktural");
     //$row = mysql_fetch_array($query);
     //$poin = $row['poin'];
     
@@ -417,7 +417,7 @@ function hitungPoinStruktural($num){
 function poinLevelKoordinasi($num){
     $poin = 0;
     
-    $query = mysql("a3821629_rs", "select * from a3821629_rs.e_3_level_koordinasi where e_3_level_koordinasi.jumlah='$num'");
+    $query = mysql("u6799722_rumahsakit", "select * from u6799722_rumahsakit.e_3_level_koordinasi where e_3_level_koordinasi.jumlah='$num'");
     $row = mysql_fetch_array($query);
     $poin = $row['poin'];
     
@@ -426,7 +426,7 @@ function poinLevelKoordinasi($num){
 
 function hitungPoinLevelKoordinasi($num){
     $poin = 0;
-    $query = mysql("a3821629_rs", "select MAX(poin) as poin from a3821629_rs.e_3_level_koordinasi");
+    $query = mysql("u6799722_rumahsakit", "select MAX(poin) as poin from u6799722_rumahsakit.e_3_level_koordinasi");
     $row = mysql_fetch_array($query);
     $poin = $row['poin'];
     
@@ -438,7 +438,7 @@ function hitungPoinLevelKoordinasi($num){
 function poinKepanitiaan($num){
     $poin = 0;
     
-    $query = mysql("a3821629_rs", "select SUM(poin) as poin from a3821629_rs.detail_kepanitiaan where detail_kepanitiaan.id_pegawai='$num'");
+    $query = mysql("u6799722_rumahsakit", "select SUM(poin) as poin from u6799722_rumahsakit.detail_kepanitiaan where detail_kepanitiaan.id_pegawai='$num'");
     $row = mysql_fetch_array($query);
     $poin = $row['poin'];
     

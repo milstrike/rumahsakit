@@ -21,7 +21,7 @@
 
 $counter = 1;
 $sql = "select * from data_pegawai ORDER BY data_pegawai.nama ASC";
-$query = mysql("a3821629_rs", "select * from data_pegawai ORDER BY data_pegawai.nama ASC");
+$query = mysql("u6799722_rumahsakit", "select * from data_pegawai ORDER BY data_pegawai.nama ASC");
 $rows = mysql_num_rows($query);
 if($rows > 0){
     

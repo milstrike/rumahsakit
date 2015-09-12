@@ -31,8 +31,8 @@ if (isset($_POST['submitTambah'])) {
         $bobot = "";
         $sum = "";
 
-$sqlx = "INSERT INTO a3821629_rs.master_ikip (id, kategori, indikator, ci, target_a, target_b, nilai, bobot, sum) VALUES (NULL, '$kategori', '$indikator', '$ci', '$target_a', '$target_b', '$nilai', '$bobot', '$sum')";
-$queryx = mysql("a3821629_rs", $sqlx); 
+$sqlx = "INSERT INTO u6799722_rumahsakit.master_ikip (id, kategori, indikator, ci, target_a, target_b, nilai, bobot, sum) VALUES (NULL, '$kategori', '$indikator', '$ci', '$target_a', '$target_b', '$nilai', '$bobot', '$sum')";
+$queryx = mysql("u6799722_rumahsakit", $sqlx); 
     
 }
 

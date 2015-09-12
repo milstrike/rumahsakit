@@ -711,7 +711,7 @@ D:\xampp\htdocs\rumahsakit\data\view\tambahSertifikasiViewModal.php
 D:\xampp\htdocs\rumahsakit\data\view\tambahStrukturalViewModal.php
 D:\xampp\htdocs\rumahsakit\data\view\userView.php
 D:\xampp\htdocs\rumahsakit\data\view\userViewModal.php
-D:\xampp\htdocs\rumahsakit\dbase\a3821629_rs.sql
+D:\xampp\htdocs\rumahsakit\dbase\u6799722_rumahsakit.sql
 D:\xampp\htdocs\rumahsakit\dbase\rumahsakit2.sql
 D:\xampp\htdocs\rumahsakit\layout\header.php
 D:\xampp\htdocs\rumahsakit\mechanism\apps

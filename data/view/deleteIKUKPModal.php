@@ -21,7 +21,7 @@
 
 $counter = 1;
 $sql = "select * from master_ikukp";
-$query = mysql("a3821629_rs", "select * from master_ikukp");
+$query = mysql("u6799722_rumahsakit", "select * from master_ikukp");
 if($rows > 0){
     while($row = mysql_fetch_assoc($query)){
         $id = $row['id'];

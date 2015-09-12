@@ -48,7 +48,7 @@ $password2 = stripslashes($password2);
 $username2 = mysql_real_escape_string($username2);
 $password2 = mysql_real_escape_string($password2);
 
-$query = mysql("a3821629_rs", "select * from user where password='$password2' AND username='$username2'");
+$query = mysql("u6799722_rumahsakit", "select * from user where password='$password2' AND username='$username2'");
 $rows = mysql_num_rows($query);
 if ($rows == 1) {
 $error = "<font color='red'>Terjadi duplikasi username, gunakan username yang lain!</font>";
@@ -56,12 +56,12 @@ $error = "<font color='red'>Terjadi duplikasi username, gunakan username yang la
 else if($rows == 0) {
 
     
-$sqlx = "INSERT INTO a3821629_rs.user (id, username, password, user_umask, pass_umask, level, change_date) VALUES (NULL, '$username2', '$password2', '$username', '$password', '$level', CURRENT_TIMESTAMP)";
-$queryx = mysql("a3821629_rs", $sqlx);    
+$sqlx = "INSERT INTO u6799722_rumahsakit.user (id, username, password, user_umask, pass_umask, level, change_date) VALUES (NULL, '$username2', '$password2', '$username', '$password', '$level', CURRENT_TIMESTAMP)";
+$queryx = mysql("u6799722_rumahsakit", $sqlx);    
 
 
-$sqln = "INSERT INTO a3821629_rs.user_detail (id, nama, jabatan, telepon, change_date) VALUES (NULL, '$namalengkap', '$jabatan', '$telepon', CURRENT_TIMESTAMP)";
-        $queryn = mysql("a3821629_rs", $sqln); 
+$sqln = "INSERT INTO u6799722_rumahsakit.user_detail (id, nama, jabatan, telepon, change_date) VALUES (NULL, '$namalengkap', '$jabatan', '$telepon', CURRENT_TIMESTAMP)";
+        $queryn = mysql("u6799722_rumahsakit", $sqln); 
     
 
     header("Location:../../apps/manajemen_user/");

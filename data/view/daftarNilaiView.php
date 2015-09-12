@@ -23,7 +23,7 @@ include "../../../data/view/dataExtractor.php";
 
 $counter = 1;
 $sql = "select * from daftar_nilai";
-$query = mysql("a3821629_rs", "select * from daftar_nilai");
+$query = mysql("u6799722_rumahsakit", "select * from daftar_nilai");
 $rows = mysql_num_rows($query);
 if($rows > 0){
     while($row = mysql_fetch_assoc($query)){

@@ -21,7 +21,7 @@ include "my-conf.php";
 function SearchPoint($num){
     $dataPoin = "";
     
-    $query = mysql("a3821629_rs", "select poin from a3821629_rs.e_2_kepanitiaan_tim_kerja where e_2_kepanitiaan_tim_kerja.id='$num'");
+    $query = mysql("u6799722_rumahsakit", "select poin from u6799722_rumahsakit.e_2_kepanitiaan_tim_kerja where e_2_kepanitiaan_tim_kerja.id='$num'");
     $row = mysql_fetch_array($query);
     $dataPoin = $row['poin'];
     
@@ -37,8 +37,8 @@ $jabatan=$_POST['jabatan'];
 $poin = SearchPoint($jabatan);
 
     
-$sqlx = "INSERT INTO a3821629_rs.detail_kepanitiaan (id, id_pegawai, jabatan, poin, bulan) VALUES ('$id', '$nama', '$jabatan', '$poin', CURRENT_TIMESTAMP)";
-$queryx = mysql("a3821629_rs", $sqlx);    
+$sqlx = "INSERT INTO u6799722_rumahsakit.detail_kepanitiaan (id, id_pegawai, jabatan, poin, bulan) VALUES ('$id', '$nama', '$jabatan', '$poin', CURRENT_TIMESTAMP)";
+$queryx = mysql("u6799722_rumahsakit", $sqlx);    
 
 ////header("Refresh:0");
 }

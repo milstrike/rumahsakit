@@ -6,6 +6,8 @@
         include "../../../class/initTitle.php";
         include "../../../data/basic.php";
         include "../../../data/isiTabel.php";
+        include "../../../data/pindahIKIP.php";
+        include "../../../data/pindahIKUKP.php";
         //include "../../../data/editPerangkat.php";
         //include "../../../data/deleteDataNilai.php";
         //include "../../../data/launchPoinBulan.php";

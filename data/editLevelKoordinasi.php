@@ -29,8 +29,8 @@ $jumlah = $_POST['bawahan'];
 $poin = getPoinLevelKoordinasi($jumlah);
 
 
-$sqlx = "UPDATE a3821629_rs.level_koordinasi SET id_level_koordinasi='$jumlah', poin='$poin' WHERE level_koordinasi.id_pegawai='$id'";
-$queryx = mysql("a3821629_rs", $sqlx);    
+$sqlx = "UPDATE u6799722_rumahsakit.level_koordinasi SET id_level_koordinasi='$jumlah', poin='$poin' WHERE level_koordinasi.id_pegawai='$id'";
+$queryx = mysql("u6799722_rumahsakit", $sqlx);    
 
 
 //header("Location:../apps/konfigurasi_poin/konfigurasi_poin_masa_kerja");

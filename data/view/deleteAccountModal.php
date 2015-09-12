@@ -21,7 +21,7 @@
 
 $counter = 1;
 $sql = "select * from user, user_detail where user.id=user_detail.id";
-$query = mysql("a3821629_rs", "select * from user, user_detail where user.id=user_detail.id");
+$query = mysql("u6799722_rumahsakit", "select * from user, user_detail where user.id=user_detail.id");
 $rows = mysql_num_rows($query);
 if($rows > 0){
     while($row = mysql_fetch_assoc($query)){

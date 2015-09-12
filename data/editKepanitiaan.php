@@ -32,8 +32,8 @@ $keterangan=$_POST['keterangan'];
 $poin=$_POST['poin'];
 
 
-$sqlx = "UPDATE a3821629_rs.e_2_kepanitiaan_tim_kerja SET keterangan='$keterangan', poin='$poin' WHERE e_2_kepanitiaan_tim_kerja.id='$id'";
-$queryx = mysql("a3821629_rs", $sqlx);    
+$sqlx = "UPDATE u6799722_rumahsakit.e_2_kepanitiaan_tim_kerja SET keterangan='$keterangan', poin='$poin' WHERE e_2_kepanitiaan_tim_kerja.id='$id'";
+$queryx = mysql("u6799722_rumahsakit", $sqlx);    
 
 
 //header("Location:../apps/konfigurasi_poin/konfigurasi_poin_masa_kerja");

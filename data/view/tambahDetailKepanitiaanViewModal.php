@@ -22,7 +22,7 @@ function ListNama(){
     $listnama = "";
     
     $sql = "select * from data_pegawai";
-    $query = mysql("a3821629_rs", "select * from data_pegawai");
+    $query = mysql("u6799722_rumahsakit", "select * from data_pegawai");
     $rows = mysql_num_rows($query);
     if($rows > 0){
         while($row = mysql_fetch_assoc($query)){
@@ -43,7 +43,7 @@ function ListJabatan(){
     $listjabatan = "";
     
     $sql = "select * from e_2_kepanitiaan_tim_kerja";
-    $query = mysql("a3821629_rs", "select * from e_2_kepanitiaan_tim_kerja");
+    $query = mysql("u6799722_rumahsakit", "select * from e_2_kepanitiaan_tim_kerja");
     $rows = mysql_num_rows($query);
     if($rows > 0){
         while($row = mysql_fetch_assoc($query)){

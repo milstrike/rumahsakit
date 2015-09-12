@@ -21,7 +21,7 @@
 
 
 $sql = "select * from satker";
-$query = mysql("a3821629_rs", "select * from satker");
+$query = mysql("u6799722_rumahsakit", "select * from satker");
 $rows = mysql_num_rows($query);
 if($rows > 0){
     while($row = mysql_fetch_assoc($query)){

@@ -21,7 +21,7 @@
 
 $counter = 1;
 $sql = "select * from c_1_resiko";
-$query = mysql("a3821629_rs", "select * from c_1_resiko");
+$query = mysql("u6799722_rumahsakit", "select * from c_1_resiko");
 $rows = mysql_num_rows($query);
 if($rows > 0){
     while($row = mysql_fetch_assoc($query)){

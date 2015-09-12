@@ -25,7 +25,7 @@ $id=$_POST['id'];
 $indikator=$_POST['indikator'];
 
 
-$sqlx = "UPDATE a3821629_rs.master_ikukp SET indikator='$indikator' WHERE master_ikukp.id='$id'";
-$queryx = mysql("a3821629_rs", $sqlx);    
+$sqlx = "UPDATE u6799722_rumahsakit.master_ikukp SET indikator='$indikator' WHERE master_ikukp.id='$id'";
+$queryx = mysql("u6799722_rumahsakit", $sqlx);    
 }
 

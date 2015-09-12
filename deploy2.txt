@@ -226,7 +226,7 @@ D:.
 |           userViewModal.php
 |           
 +---dbase
-|       a3821629_rs.sql
+|       u6799722_rumahsakit.sql
 |       rumahsakit2.sql
 |       
 +---layout

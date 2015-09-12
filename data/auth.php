@@ -44,7 +44,7 @@ $username = mysql_real_escape_string($username);
 $password = mysql_real_escape_string($password);
 
 // SQL query to fetch information of registerd users and finds user match.
-$query = mysql("a3821629_rs", "select * from user where password='$password' AND username='$username'");
+$query = mysql("u6799722_rumahsakit", "select * from user where password='$password' AND username='$username'");
 $rows = mysql_num_rows($query);
 if ($rows == 1) {
 $_SESSION['status'] = "1";

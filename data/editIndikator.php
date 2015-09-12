@@ -26,7 +26,7 @@ $kategori=$_POST['kategori'];
 $indikator=$_POST['indikator'];
 
 
-$sqlx = "UPDATE a3821629_rs.master_ikip SET kategori='$kategori', indikator='$indikator' WHERE master_ikip.id='$id'";
-$queryx = mysql("a3821629_rs", $sqlx);    
+$sqlx = "UPDATE u6799722_rumahsakit.master_ikip SET kategori='$kategori', indikator='$indikator' WHERE master_ikip.id='$id'";
+$queryx = mysql("u6799722_rumahsakit", $sqlx);    
 }
 

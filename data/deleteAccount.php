@@ -24,12 +24,12 @@ if (isset($_POST['submitDelete'])) {
 $id4=$_POST['id'];
 
 
-$sqlx = "DELETE FROM a3821629_rs.user WHERE user.id='$id4'";
-$queryx = mysql("a3821629_rs", $sqlx);    
+$sqlx = "DELETE FROM u6799722_rumahsakit.user WHERE user.id='$id4'";
+$queryx = mysql("u6799722_rumahsakit", $sqlx);    
 
 
-$sqln = "DELETE FROM a3821629_rs.user_detail WHERE user_detail.id='$id4'";
-$queryn = mysql("a3821629_rs", $sqln); 
+$sqln = "DELETE FROM u6799722_rumahsakit.user_detail WHERE user_detail.id='$id4'";
+$queryn = mysql("u6799722_rumahsakit", $sqln); 
 
 
 header("Location:../../apps/manajemen_user/");

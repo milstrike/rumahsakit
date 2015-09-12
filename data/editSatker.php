@@ -31,8 +31,8 @@ $id=$_POST['id'];
 $satker=$_POST['satker'];
 
 
-$sqlx = "UPDATE a3821629_rs.satker SET satuan_kerja='$satker' WHERE satker.id='$id'";
-$queryx = mysql("a3821629_rs", $sqlx);    
+$sqlx = "UPDATE u6799722_rumahsakit.satker SET satuan_kerja='$satker' WHERE satker.id='$id'";
+$queryx = mysql("u6799722_rumahsakit", $sqlx);    
 
 
 //header("Location:../apps/konfigurasi_poin/konfigurasi_poin_masa_kerja");

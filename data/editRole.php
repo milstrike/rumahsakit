@@ -32,8 +32,8 @@ $namaRole=$_POST['role'];
 $keterangan=$_POST['keterangan'];
 
 
-$sqlx = "UPDATE a3821629_rs.user_role SET role='$namaRole', keterangan='$keterangan' WHERE user_role.id='$id'";
-$queryx = mysql("a3821629_rs", $sqlx);    
+$sqlx = "UPDATE u6799722_rumahsakit.user_role SET role='$namaRole', keterangan='$keterangan' WHERE user_role.id='$id'";
+$queryx = mysql("u6799722_rumahsakit", $sqlx);    
 
 
 //header("Location:../apps/konfigurasi_poin/konfigurasi_poin_masa_kerja");

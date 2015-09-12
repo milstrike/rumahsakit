@@ -31,8 +31,8 @@ $keteranganMasaKerja2=$_POST['keteranganMasaKerja'];
 $poinMasaKerja2=$_POST['poinMasaKerja'];
 
     
-$sqlx = "INSERT INTO a3821629_rs.a_1_masa_kerja (id, keterangan, poin) VALUES (NULL, '$keteranganMasaKerja2', '$poinMasaKerja2')";
-$queryx = mysql("a3821629_rs", $sqlx);    
+$sqlx = "INSERT INTO u6799722_rumahsakit.a_1_masa_kerja (id, keterangan, poin) VALUES (NULL, '$keteranganMasaKerja2', '$poinMasaKerja2')";
+$queryx = mysql("u6799722_rumahsakit", $sqlx);    
 
 //header("Refresh:0");
 

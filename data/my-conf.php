@@ -20,7 +20,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$database = "a3821629_rs";
+$database = "u6799722_rumahsakit";
 
 // Create connection
 $conn = mysql_connect($servername, $username, $password, $database);

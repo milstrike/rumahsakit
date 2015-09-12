@@ -21,7 +21,7 @@
 
 $counter = 1;
 $sql = "select * from e_1_struktural ORDER BY e_1_struktural.poin ASC";
-$query = mysql("a3821629_rs", "select * from e_1_struktural ORDER BY e_1_struktural.poin ASC");
+$query = mysql("u6799722_rumahsakit", "select * from e_1_struktural ORDER BY e_1_struktural.poin ASC");
 $rows = mysql_num_rows($query);
 if($rows > 0){
     while($row = mysql_fetch_assoc($query)){

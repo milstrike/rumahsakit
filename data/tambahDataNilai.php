@@ -29,11 +29,11 @@ $tahun = $_POST['tahun'];
 $bulan = $_POST['bulan']."_";
 $nama_tabel = $poin.$bulan.$tahun;
 
-$sqlx = "INSERT INTO a3821629_rs.daftar_nilai (id, bulan, tahun, nama_tabel) VALUES (NULL, '$bulanWaktu', '$tahunWaktu', '$nama_tabel')";
-$queryx = mysql("a3821629_rs", $sqlx);  
+$sqlx = "INSERT INTO u6799722_rumahsakit.daftar_nilai (id, bulan, tahun, nama_tabel) VALUES (NULL, '$bulanWaktu', '$tahunWaktu', '$nama_tabel')";
+$queryx = mysql("u6799722_rumahsakit", $sqlx);  
 
 $sqly = "CREATE TABLE ".$nama_tabel." LIKE master_nilai";
-$queryy = mysql("a3821629_rs", $sqly);  
+$queryy = mysql("u6799722_rumahsakit", $sqly);  
     
 }
 
