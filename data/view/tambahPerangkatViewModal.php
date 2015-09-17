@@ -22,13 +22,13 @@ include 'optionEmergencyView.php';
             "
             <div id='tambah' class='modal hide'' tabindex='-1' role='dialog' aria-labelledby='tambah' aria-hidden='true'>
             <div class='modal-header' style='background-color: #149bdf;'>
-            <button type='button' class='close' data-dismiss='modal' aria-hidden='true'>×</button>
-            <h3 id='myModalLabel' style='color: #fff;'>Tambah Perangkat Rumah Sakit</h3>
+            <button type='button' class='close' data-dismiss='modal' aria-hidden='true'>&times;</button>
+            <h3 id='myModalLabel' style='color: #fff;'>Tambah Unit Rumah Sakit</h3>
             </div>
             <div class='modal-body'>
                 <form class='form-horizontal' action='' method='post'>
                                 <div class='control-group'>
-                                    <label class='control-label' for='namaPerangkat'>Nama Perangkat*</label>
+                                    <label class='control-label' for='namaPerangkat'>Nama Unit*</label>
                                     <div class='controls'>
                                         <input id='namaPerangkat' name='namaPerangkat' type='text' required='required' placeholder='Contoh: Rawat Jalan'>
                                     </div>
@@ -52,7 +52,7 @@ include 'optionEmergencyView.php';
                                 <div class='control-group'>
                                     <label class='control-label' for='submit'>&nbsp;</label>
                                     <div class='controls'>
-                                        <button type='submit' id='submitTambah' name='submitTambah' class='btn btn-primary'><i class='icon-plus-sign icon-white'></i>&nbsp;<strong>Tambah Perangkat Rumah Sakit!</strong></button><br/>
+                                        <button type='submit' id='submitTambah' name='submitTambah' class='btn btn-primary'><i class='icon-plus-sign icon-white'></i>&nbsp;<strong>Tambah Unit Rumah Sakit!</strong></button><br/>
                                     </div>
                                 </div>
                                     </form>

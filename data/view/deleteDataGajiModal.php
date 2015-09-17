@@ -36,7 +36,7 @@ if($rows > 0){
             "
             <div id='delete".$counter."' class='modal hide'' tabindex='-1' role='dialog' aria-labelledby='delete".$counter."' aria-hidden='true'>
             <div class='modal-header' style='background-color: #149bdf;'>
-            <button type='button' class='close' data-dismiss='modal' aria-hidden='true'>×</button>
+            <button type='button' class='close' data-dismiss='modal' aria-hidden='true'>&times;</button>
             <h3 id='myModalLabel' style='color: #fff;'>Hapus Data Gaji</h3>
             </div>
             <div class='modal-body'>

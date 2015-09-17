@@ -198,14 +198,14 @@
                                             <a href="../apps/konfigurasi_poin/" title="Konfigurasi poin poin penilaian pegawai"><strong>Konfigurasi Poin</strong></a>
                                         </td>
                                     </tr>
-                                    <tr>
+                                  <!--  <tr>
                                         <td widtch="20%" class="firstColumn">
                                             <img src="../../assets/icon-uses/bobot.png" alt="icon-bobot"/>
                                         </td>
                                         <td width="80%" class="anotherColumn">
                                             <a href="../apps/konfigurasi_bobot/" title="Manajemen bobot bobot nilai"><strong>Konfigurasi Bobot</strong></a>
                                         </td>
-                                    </tr>
+                                    </tr> -->
                                     <tr>
                                         <td widtch="20%" class="firstColumn">
                                             <img src="../../assets/icon-uses/ikip.png" alt="icon-ikip"/>
@@ -233,7 +233,7 @@
                                             <img src="../../assets/icon-uses/bagian.png" alt="icon-bagian"/>
                                         </td>
                                         <td width="80%" class="anotherColumn">
-                                            <a href="../apps/manajemen_rs/" title="Manajemen Laporan Penggajian"><strong>Manajemen Perangkat RS</strong></a>
+                                            <a href="../apps/manajemen_rs/" title="Manajemen Laporan Penggajian"><strong>Manajemen Unit RS</strong></a>
                                         </td>
                                     </tr>
                                 </table>

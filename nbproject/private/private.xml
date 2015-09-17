@@ -3,8 +3,29 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/xampp/htdocs/rumahsakit/data/view/tambahDataNilaiViewModal.php</file>
+            <file>file:/D:/xampp/htdocs/rumahsakit/data/view/editAccountViewModal.php</file>
+            <file>file:/D:/xampp/htdocs/rumahsakit/mechanism/takeoff/index.php</file>
+            <file>file:/D:/xampp/htdocs/rumahsakit/data/view/roleUnit.php</file>
+            <file>file:/D:/xampp/htdocs/rumahsakit/data/view/dataExtractor.php</file>
+            <file>file:/D:/xampp/htdocs/rumahsakit/data/view/daftarNilaiViewEvaluator.php</file>
+            <file>file:/D:/xampp/htdocs/rumahsakit/data/view/deletePegawaiModalEvaluator.php</file>
+            <file>file:/D:/xampp/htdocs/rumahsakit/mechanism/apps/manajemen_role/edit_role/index.php</file>
+            <file>file:/D:/xampp/htdocs/rumahsakit/data/view/daftarNilaiView.php</file>
+            <file>file:/D:/xampp/htdocs/rumahsakit/data/view/viewAdvancedUser.php</file>
+            <file>file:/D:/xampp/htdocs/rumahsakit/data/editAccount.php</file>
+            <file>file:/D:/xampp/htdocs/rumahsakit/data/getRoleUnit.php</file>
+            <file>file:/D:/xampp/htdocs/rumahsakit/data/sudahDiterima.php</file>
+            <file>file:/D:/xampp/htdocs/rumahsakit/mechanism/apps/manajemen_pegawai_evaluator/index.php</file>
+            <file>file:/D:/xampp/htdocs/rumahsakit/mechanism/apps/manajemen_penilaian_evaluator/index.php</file>
+            <file>file:/D:/xampp/htdocs/rumahsakit/data/view/daftarPoinPegawaiView.php</file>
+            <file>file:/D:/xampp/htdocs/rumahsakit/data/auth.php</file>
+            <file>file:/D:/xampp/htdocs/rumahsakit/data/pindahEditRole.php</file>
+            <file>file:/D:/xampp/htdocs/rumahsakit/data/view/pegawaiViewModalEvaluator.php</file>
+            <file>file:/D:/xampp/htdocs/rumahsakit/mechanism/offset/index.php</file>
             <file>file:/D:/xampp/htdocs/rumahsakit/mechanism/apps/manajemen_penilaian/index.php</file>
+            <file>file:/D:/xampp/htdocs/rumahsakit/mechanism/apps/manajemen_role/advanced_role/index.php</file>
+            <file>file:/D:/xampp/htdocs/rumahsakit/data/view/pegawaiViewModal.php</file>
+            <file>file:/D:/xampp/htdocs/rumahsakit/data/view/pegawaiViewEvaluator.php</file>
         </group>
     </open-files>
 </project-private>

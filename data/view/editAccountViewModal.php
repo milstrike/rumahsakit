@@ -36,7 +36,7 @@ if($rows > 0){
             "
             <div id='EditUser".$counter."' class='modal hide'' tabindex='-1' role='dialog' aria-labelledby='UserDetail".$counter."' aria-hidden='true'>
             <div class='modal-header' style='background-color: #149bdf;'>
-            <button type='button' class='close' data-dismiss='modal' aria-hidden='true'>×</button>
+            <button type='button' class='close' data-dismiss='modal' aria-hidden='true'>&times;</button>
             <h3 id='myModalLabel' style='color: #fff;'>Edit User</h3>
             </div>
             <div class='modal-body'>
@@ -84,8 +84,8 @@ if($rows > 0){
                                     <div class='controls'>
                                         <select id='jabatan' name='jabatan' class='span5' value='".$jabatanView2."'>
                                             <option value='Super Admin'>Super Admin</option>
-                                            <option value='Admin'>Admin</option>
-                                            <option value='Pejabat Penilai'>Pejabat Penilai</option>
+                                            <option value='Penilai'>Penilai</option>
+                                            <option value='Pengamat'>Pengamat</option>
                                         </select>
                                     </div>
                                 </div>

@@ -101,11 +101,14 @@
                                 <li>Manajemen Penggajian (Update Only)</li>
                                 <li>Manajemen Perpajakan (Update Only)</li>
                                 <li>Manajemen Laporan Penilaian Pegawai (View Only, Auto Calculation)</li>
+                                <li>Penilaian IKIP Menggunakan inline editing</li>
+                                <li>Penilaian IKUKP menggunakan inline editing</li>
+                                <li>Penghitungan Gaji secara otomatis</li>
+                                <li>Cetak Form Gaji</li>
+                                <li>Multi user</li>
                             </ol>
                             <legend>Daftar Fitur yang masih dalam proses pengerjaan</legend>
                             <ol>
-                                <li>Penilaian IKIP Menggunakan inline editing</li>
-                                <li>Penilaian IKUKP menggunakan inline editing</li>
                                 <li>Konfigurasi Sistem</li>
                                 <li>Maintenance Sistem</li>
                                 <li>Bantuan Sistem</li>

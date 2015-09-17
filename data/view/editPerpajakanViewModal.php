@@ -32,7 +32,7 @@ if($rows > 0){
             "
             <div id='editKepegawaian".$counter."' class='modal hide'' tabindex='-1' role='dialog' aria-labelledby='editKepegawaian".$counter."' aria-hidden='true'>
             <div class='modal-header' style='background-color: #149bdf;'>
-            <button type='button' class='close' data-dismiss='modal' aria-hidden='true'>×</button>
+            <button type='button' class='close' data-dismiss='modal' aria-hidden='true'>&times;</button>
             <h3 id='myModalLabel' style='color: #fff;'>Edit Pajak Penghasilan</h3>
             </div>
             <div class='modal-body'>

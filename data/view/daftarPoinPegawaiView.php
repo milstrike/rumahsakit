@@ -23,6 +23,10 @@
 
 $nama_tabel = $_SESSION['tabel'];
 
+$error = "";
+$jumlahAkhir = 0;
+$finalisasiData = 0;
+
 $counter = 1;
 $sql = "select * from ".$nama_tabel;
 $query = mysql("u6799722_rumahsakit", $sql);
@@ -51,7 +55,14 @@ if($rows > 0){
         $sum_ikukp = $row["sum_ikup"];
         $ikukp = $row["ikukp"];
         $performanceIndex = $row["performance_index"];
+        $totalIndividu = $row["total_individu"];
         
+        $jumlahAkhir = $jumlahAkhir + $performanceIndex;
+        
+        $performance_index = ($ikip + $ikukp)*30;
+        
+         $sqlxh = "UPDATE u6799722_rumahsakit.".$nama_tabel." SET performance_index='$performance_index' WHERE id='$id'";
+         $queryxh = mysql("u6799722_rumahsakit", $sqlxh);
         
         //ExtractData
         $namaPegawai = nama($id_pegawai);
@@ -103,9 +114,7 @@ if($rows > 0){
         $getLevelKoordinasi = poinLevelKoordinasi($levelKoordinasiView);
         
         $fghj = $kepanitiaanView/5;
-        $getKepanitiaan = round($fghj);
-        
-        
+        $getKepanitiaan = round($fghj);                        
         
         echo 
             "<tr>
@@ -221,12 +230,21 @@ if($rows > 0){
                                     
                                 </tbody>
                         </table>
+                        
+                        <table class='table table-bordered'>
+                            <tr>
+                                <td width='30%'>Nilai Akhir</td>
+                                <td width='70%'>".$totalIndividu."</td>
+                                </td>
+                            </tr>
+                        </table>
                         </div>
                 </td>
             </tr>
             ";
         $counter = $counter + 1;
     }
+    
 }
 else{
     echo 

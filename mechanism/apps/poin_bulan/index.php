@@ -8,6 +8,7 @@
         include "../../../data/isiTabel.php";
         include "../../../data/pindahIKIP.php";
         include "../../../data/pindahIKUKP.php";
+        include "../../../data/finalisasiData.php";
         //include "../../../data/editPerangkat.php";
         //include "../../../data/deleteDataNilai.php";
         //include "../../../data/launchPoinBulan.php";
@@ -92,11 +93,23 @@
                                 </ul>
                             
                                 <p align="right">
-                                <form action='' method='post'>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <form action='' method='post'>
                                     <button type='submit' id='isiTabel' name='isiTabel' class="btn btn-small"><i class="icon-list-alt"></i>&nbsp;Isi Tabel</button><br/>
                                 </form>
+                                        </td>
+                                        <td>
+                                            <form action='' method='post'>
+                                     <button type='submit' id='finalisasiData' name='finalisasiData' class="btn btn-warning btn-small" title="Lakukan finalisasi data sebelum Anda masuk ke sistem penggajian!"><i class="icon-ok-sign"></i>&nbsp;Finalisasi Data</button><br/>
+                                </form>
+                                        </td>
+                                    </tr>
+                                </table>
                                 </p>    
                                 
+                                <?php echo $error; ?>
                                 
                                     <table width="100%" cellpadding="5" cellspacing="5" class="table table-bordered table-hover">
                                 <thead>

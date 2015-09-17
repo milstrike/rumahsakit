@@ -117,31 +117,31 @@
                                     </td>
                                 </tr>
                             </table>
-                            </div>
+                            </div> -->
                             
                             <div class="span4">
                                 <legend>Kepegawaian</legend>
                                 <table width="100%" border="0" cellpadding="5" cellspacing="5">
-                                    <tr>
+                                    <!-- <tr>
                                         <td widtch="20%" class="firstColumn">
                                             <img src="../../assets/icon-uses/plus.png" alt="icon-tambah"/>
                                         </td>
                                         <td width="80%" class="anotherColumn">
                                             <a href="#" title="Tambah Pegawai yang terdaftar di institusi"><strong>Tambah Pegawai...</strong></a>
                                         </td>
-                                    </tr>
+                                    </tr>-->
                                     <tr>
                                         <td widtch="20%" class="firstColumn">
                                             <img src="../../assets/icon-uses/pegawai.png" alt="icon-pegawai"/>
                                         </td>
                                         <td width="80%" class="anotherColumn">
-                                            <a href="../apps/manajemen_pegawai/" title="Manajemen Pegawai yang terdaftar di institusi"><strong>Manajemen Pegawai</strong></a>
+                                            <a href="../apps/manajemen_pegawai_evaluator/" title="Manajemen Pegawai yang terdaftar di institusi"><strong>Manajemen Pegawai</strong></a>
                                         </td>
                                     </tr>
                                 </table>
                                 
                                 <br/>
-                                <legend>Penilaian</legend>
+                                <!-- <legend>Penilaian</legend>
                                 <table width="100%" border="0" cellpadding="5" cellspacing="5">
                                     <tr>
                                         <td widtch="20%" class="firstColumn">
@@ -175,18 +175,18 @@
                                             <a href="../apps/form_ikukp/" title="Manajemen Indikator Kinerja Unit Kerja Pegawai(IKUKP)"><strong>Form IKUKP</strong></a>
                                         </td>
                                     </tr>
-                                </table>
+                                </table> -->
                             </div>
                             
                             <div class="span4">
-                                <legend>Rumah Sakit</legend>
+                                <!-- <legend>Rumah Sakit</legend>
                                 <table width="100%" border="0" cellpadding="5" cellspacing="5">
                                     <tr>
                                         <td widtch="20%" class="firstColumn">
                                             <img src="../../assets/icon-uses/bagian.png" alt="icon-bagian"/>
                                         </td>
                                         <td width="80%" class="anotherColumn">
-                                            <a href="../apps/manajemen_rs/" title="Manajemen Laporan Penggajian"><strong>Manajemen Perangkat RS</strong></a>
+                                            <a href="../apps/manajemen_rs/" title="Manajemen Laporan Penggajian"><strong>Manajemen Unit RS</strong></a>
                                         </td>
                                     </tr>
                                 </table>
@@ -209,20 +209,28 @@
                                         </td>
                                     </tr>
                                 </table>
-                                <br/>
-                                <legend>Laporan Gaji</legend>
+                                <br/> -->
+                                <legend>Manajemen Laporan</legend>
                                 <table width="100%" border="0" cellpadding="5" cellspacing="5">
                                     <tr>
                                         <td widtch="20%" class="firstColumn">
                                             <img src="../../assets/icon-uses/laporan.png" alt="icon-laporan"/>
                                         </td>
                                         <td width="80%" class="anotherColumn">
-                                            <a href="#" title="Manajemen Laporan Penggajian"><strong>Manajemen Laporan</strong></a>
+                                            <a href="../apps/manajemen_penilaian_evaluator/" title="Manajemen Laporan Penilaian"><strong>Manajemen Laporan Penilaian</strong></a>
                                         </td>
                                     </tr>
+                                    <!-- <tr>
+                                        <td widtch="20%" class="firstColumn">
+                                            <img src="../../assets/icon-uses/laporan.png" alt="icon-laporan"/>
+                                        </td>
+                                        <td width="80%" class="anotherColumn">
+                                            <a href="../apps/manajemen_penggajian/" title="Manajemen Laporan Penggajian"><strong>Manajemen Laporan Penggajian</strong></a>
+                                        </td>
+                                    </tr> -->
                                 </table>
-                            </div> -->
-                            Under Construction
+                            </div>
+                            <!-- Under Construction -->
                         </div>
                     </div>
                 </div>

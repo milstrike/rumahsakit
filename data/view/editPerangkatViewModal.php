@@ -31,7 +31,7 @@ if($rows > 0){
             "
             <div id='edit".$counter."' class='modal hide'' tabindex='-1' role='dialog' aria-labelledby='edit".$counter."' aria-hidden='true'>
             <div class='modal-header' style='background-color: #149bdf;'>
-            <button type='button' class='close' data-dismiss='modal' aria-hidden='true'>×</button>
+            <button type='button' class='close' data-dismiss='modal' aria-hidden='true'>&times;</button>
             <h3 id='myModalLabel' style='color: #fff;'>Edit Perangkat Rumah Sakit</h3>
             </div>
             <div class='modal-body'>
@@ -43,7 +43,7 @@ if($rows > 0){
                                     </div>
                                 </div>
                                 <div class='control-group'>
-                                    <label class='control-label' for='namaPerangkat'>Nama Perangkat*</label>
+                                    <label class='control-label' for='namaPerangkat'>Nama Unit*</label>
                                     <div class='controls'>
                                         <input id='namaPerangkat' name='namaPerangkat' type='text' required='required' value='".$keterangan."'>
                                     </div>

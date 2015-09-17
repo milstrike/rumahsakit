@@ -85,9 +85,9 @@
                         
                         <div class="span9 bigPanel boxShadow" id="bigPanel">
                                 <ul class="breadcrumb">
-                                    <li><a href="../../landing/">Beranda</a> <span class="divider">/</span></li>
-                                    <li><a href="../manajemen_penilaian/">Manajemen Penilaian</a> <span class="divider">/</span></li>
-                                    <li><a href="../poin_bulan/">Edit Poin Pegawai Bulan: <?php echo $_SESSION['waktu']?></a><span class="divider">/</span></li>
+                                    <li><a href="../../takeoff//">Beranda</a> <span class="divider">/</span></li>
+                                    <li><a href="../manajemen_penilaian_evaluator/">Manajemen Penilaian</a> <span class="divider">/</span></li>
+                                    <li><a href="../poin_bulan_evaluator/">Edit Poin Pegawai Bulan: <?php echo $_SESSION['waktu']?></a><span class="divider">/</span></li>
                                     <li class="active">Indikator Kinerja Unit Kerja Pegawai (IKUKP)</li>
                                 </ul>
                             

@@ -8,6 +8,7 @@
         include "../../../data/tambahDaftarGaji.php";
         //include "../../../data/editPenggajian.php";
         include "../../../data/deleteDataGaji.php";
+        include "../../../data/launchGajiBulan.php";
         include "../../../class/logout.php";
         if(empty ($_SESSION['status'])){
             header("Location:../../../"); // Redirecting To Other Page
@@ -111,6 +112,7 @@
                                 //include "../../../data/view/editPenggajianViewModal.php";
                                 //include "../../../data/view/deletePenggajianModal.php";
                                 include "../../../data/view/deleteDataGajiModal.php";
+                                include "../../../data/view/launchGajiBulanView.php";
                             ?>
                         </div>
                     </div>

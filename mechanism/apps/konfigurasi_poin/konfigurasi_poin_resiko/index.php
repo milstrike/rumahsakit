@@ -102,7 +102,7 @@
                                 </thead>
                                 <tbody>
                                     <?php
-                                    include "../../../../data/view/ResikoView.php";
+                                    include "../../../../data/view/resikoView.php";
                                     
                                     ?>
                                 </tbody>

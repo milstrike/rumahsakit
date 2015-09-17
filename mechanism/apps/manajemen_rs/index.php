@@ -84,11 +84,11 @@
                         <div class="span9 bigPanel boxShadow" id="bigPanel">
                                 <ul class="breadcrumb">
                                     <li><a href="../../landing/">Beranda</a> <span class="divider">/</span></li>
-                                    <li class="active">Manajemen Perangkat RS</li>
+                                    <li class="active">Manajemen Unit RS</li>
                                 </ul>
                             
                                 <p align="right">
-                                    <a href="#tambah" data-toggle='modal'><button type="submit" class="btn btn-small"><i class="icon-plus-sign"></i>&nbsp;Tambah Perangkat Rumah Sakit</button></a>                                
+                                    <a href="#tambah" data-toggle='modal'><button type="submit" class="btn btn-small"><i class="icon-plus-sign"></i>&nbsp;Tambah Unit Rumah Sakit</button></a>                                
                                 </p>    
                                 
                                 

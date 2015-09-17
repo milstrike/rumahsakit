@@ -21,6 +21,8 @@ include "../../../data/my-conf.php";
 
 include "../../../data/view/dataExtractor.php";
 
+$error = "";
+
 if (isset($_POST['isiTabel'])) {
     
     $namaTabel = $_SESSION['tabel'];
@@ -108,7 +110,7 @@ $tt = hitungPoinKepanitiaan($ss);
         $performance_index = $basic;
         $total = $basic_index + $capacity_index + $risk_index + $emergency_index + $position_index + $performance_index;
                   
-        $sqlx = "INSERT INTO ".$namaTabel." (id, id_pegawai, masa_kerja, gaji_pokok, golongan, basic_index, pendidikan, sertifikasi, capacity_index, level_resiko, risk_index, level_emergency, emergency_index, struktural, level_koordinasi, kepanitiaan, position_index, ikip, ikukp, performance_index) VALUES (NULL, '$id', '$b', '$ee', '$bb', '$basic_index', '$gg', '$ii', '$capacity_index', '$kk', '$risk_index', '$ll', '$emergency_index', '$oo', '$qq', '$tt', '$position_index', '$basic', '$basic', '$performance_index')";
+        $sqlx = "INSERT INTO ".$namaTabel." (id, id_pegawai, masa_kerja, gaji_pokok, golongan, basic_index, pendidikan, sertifikasi, capacity_index, level_resiko, risk_index, level_emergency, emergency_index, struktural, level_koordinasi, kepanitiaan, position_index, ikip, ikukp, performance_index, total_individu) VALUES (NULL, '$id', '$b', '$ee', '$bb', '$basic_index', '$gg', '$ii', '$capacity_index', '$kk', '$risk_index', '$ll', '$emergency_index', '$oo', '$qq', '$tt', '$position_index', '$basic', '$basic', '$performance_index', 0)";
         $queryx = mysql("u6799722_rumahsakit", $sqlx);
         
         $sqly = "CREATE TABLE ".$id."_ikip_".$namaTabel." LIKE master_ikip";
@@ -124,6 +126,9 @@ $tt = hitungPoinKepanitiaan($ss);
         $querttx = mysql("u6799722_rumahsakit", $sqltx);
     }
 }
+
+$error='<div class="alert alert-success"><button type="button" class="close" data-dismiss="alert">&times;</button>Sukses mengisi tabel pegawai!</div>';
+
 }
 
 

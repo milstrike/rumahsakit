@@ -53,7 +53,7 @@ else{
             "<tr>
             <td colspan='7' style='padding:20px'> 
             <p align='center'>
-            <strong>Belum ada perangkat rumah sakit yang tersimpan, silakan tambahkan melalui menu Tambah Perangkat Rumah Sakit</strong>
+            <strong>Belum ada perangkat rumah sakit yang tersimpan, silakan tambahkan melalui menu Tambah Unit Rumah Sakit</strong>
             </p>
             </td>
             </tr>

@@ -46,9 +46,11 @@ $password = mysql_real_escape_string($password);
 // SQL query to fetch information of registerd users and finds user match.
 $query = mysql("u6799722_rumahsakit", "select * from user where password='$password' AND username='$username'");
 $rows = mysql_num_rows($query);
+$row = mysql_fetch_array($query);
+$_SESSION['params'] = $row['unit'];
 if ($rows == 1) {
 $_SESSION['status'] = "1";
-$_SESSION['login_user']=$username; // Initializing Session
+$_SESSION['login_user']=$username;// Initializing Session
 storing($username);
 //$error = "Berhasil Login!";
 
@@ -62,6 +64,10 @@ switch($userRole){
     
     case 2:
         header("Location:mechanism/takeoff");
+        break;
+    
+    case 3:
+        header("Location:mechanism/offset");
         break;
 }
 

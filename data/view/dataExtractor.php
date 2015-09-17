@@ -19,6 +19,18 @@
 
 //include "../my-conf.php";
 
+function getGolonganFromID($num){
+    
+    $dataGolongan = "";
+    
+    $query = mysql("u6799722_rumahsakit", "select * from u6799722_rumahsakit.data_pegawai where data_pegawai.id='$num'");
+    $row = mysql_fetch_array($query);
+    $dataGolongan = $row['golongan'];
+    
+    return $dataGolongan;
+    
+}
+
 function golongan($num){
     
     $dataGolongan = "";
@@ -28,6 +40,17 @@ function golongan($num){
     $dataGolongan = $row['keterangan'];
     
     return $dataGolongan;
+}
+
+function pajak($num){
+    
+    $dataPajak = 0;
+    
+    $query = mysql("u6799722_rumahsakit", "select * from u6799722_rumahsakit.a_2_kepegawaian where a_2_kepegawaian.id='$num'");
+    $row = mysql_fetch_array($query);
+    $dataPajak = $row['pajak'];
+    
+    return $dataPajak;
 }
 
 function satker($num){
@@ -454,10 +477,24 @@ function averageKepanitiaan($num){
 }
 
 function hitungPoinKepanitiaan($num){
-    
-    $finalPoin = $num/$num * 0.3;
-    
+    if($num == 0){
+        $finalPoin = 0;
+    }
+        
+    else{
+        $finalPoin = $num/$num * 0.3;
+    }
     return $finalPoin;
+}
+
+function getTingkatan($num){
+    $tingkatan = "";
+    
+    $query = mysql("u6799722_rumahsakit", "select * from user_role where id='$num'");
+    $row = mysql_fetch_array($query);
+    $tingkatan = $row['role'];
+    
+    return $tingkatan;
 }
 
 /*

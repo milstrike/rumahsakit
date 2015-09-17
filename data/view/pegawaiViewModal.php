@@ -53,7 +53,7 @@ if($rows > 0){
             "
             <div id='detail".$counter."' class='modal hide'' tabindex='-1' role='dialog' aria-labelledby='UserDetail".$counter."' aria-hidden='true'>
             <div class='modal-header' style='background-color: #149bdf;'>
-            <button type='button' class='close' data-dismiss='modal' aria-hidden='true'>×</button>
+            <button type='button' class='close' data-dismiss='modal' aria-hidden='true'>&times;</button>
             <h3 id='myModalLabel' style='color: #fff;'>Detail Data Pegawai</h3>
             </div>
             <div class='modal-body'>
@@ -99,7 +99,7 @@ if($rows > 0){
                         <td>".$sertifikasi."</td>
                     </tr>
                     <tr>
-                        <td>Ruang/Perangkat</td>
+                        <td>Unit</td>
                         <td>:</td>
                         <td>".$perangkat."</td>
                     </tr>

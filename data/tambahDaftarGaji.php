@@ -29,7 +29,7 @@ $tahun = $_POST['tahun'];
 $bulan = $_POST['bulan']."_";
 $nama_tabel = $poin.$bulan.$tahun;
 
-$sqlx = "INSERT INTO u6799722_rumahsakit.daftar_gaji (id, bulan, tahun, nama_tabel) VALUES (NULL, '$bulanWaktu', '$tahunWaktu', '$nama_tabel')";
+$sqlx = "INSERT INTO u6799722_rumahsakit.daftar_gaji (id, bulan, tahun, nama_tabel, dana) VALUES (NULL, '$bulanWaktu', '$tahunWaktu', '$nama_tabel', 0)";
 $queryx = mysql("u6799722_rumahsakit", $sqlx);  
 
 $sqly = "CREATE TABLE ".$nama_tabel." LIKE master_gaji";
